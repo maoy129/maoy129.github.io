@@ -1,0 +1,30 @@
+body{
+	background-color:grey;
+}
+.drink{
+	width:30vmax;
+	height:20vmin;
+	text-align:center;
+	font-family:monospace;
+	font-size:20pt;
+}
+#foam{
+	background-color:white;
+}
+#milk{
+	background-color:cornsilk;
+}
+#espresso{
+	background-color:#713D10;
+}
+#description{
+	width:30vmax;
+	height:20vmin;
+	border-style:solid;
+	border-color:white;
+	border-width:5px;
+	text-align:left;
+	font-family:monospace;
+	font-size:14pt;
+	padding:20px;
+}
