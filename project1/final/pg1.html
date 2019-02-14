@@ -5,52 +5,38 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Gentium+Basic');
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0px;
-  left: -10px;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  font-family:monospace;
-  border-radius:0px;
+@keyframes float {
+  0% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes floatx {
+  100% {
+    transform: translateY(-50px);
+  }
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: red;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.circles:hover, .circles:focus, .circles:active {
+  animation-name: floatx, float;
+  animation-duration: .3s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
 }
 body{
 	background-color:#407873;
-	margin-left:300px;
+	margin-left:100px;
 	margin-right:100px;
 }
-.circles{
+div{
 	background-color:#c56c6d;
 	width:160px;
 	height:160px;
@@ -84,60 +70,48 @@ a{
 	text-decoration:none;
 }
 #line4{
-	margin-top:120px;
+	margin-top:150px;
 	margin-bottom:200px;
 }
-.circles:hover{
-	-webkit-transform: translate(20px,30px);
-}
 #circle1{
-	top:70px;
+	top:-30px;
 	right:-50px;
 }
 #circle2{
-	top:120px;
+	top:20px;
 	right:30px;
 }
 #circle3{
-	top:150px;
+	top:50px;
 	right:300px;
 }
 #circle4{
-	top:500px;
+	top:400px;
 	right:-60px;
 }
 #circle6{
-	top:450px;
+	top:350px;
 	right:20px;
 }
 #circle7{
-	top:540px;
+	top:440px;
 	right:180px;
 }
 #circle8{
-	top:470px;
+	top:370px;
 	right:280px;
 }
 #circle9{
-	top:560px;
+	top:460px;
 	right:320px;
 }
 #circle10{
-	top:500px;
+	top:400px;
 	right:430px;
 }	
 </style>
 </head>
 <body>
-  <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="../index.html">Home</a>
-  <a href="project1.html">Ver.1</a>
-  <a href="pg1.html">Ver.2</a>
-  <a href="#">Final</a>
-  </div>
-  <span style="font-size:30px;cursor:pointer;font-family:monospace;color:white;margin-left:-250px;" onclick="openNav()">&#9776; open</span>
-
 	<h1><a href="pg2.html">Hide this.</a></h1>
 	<h2><a href="pg2.html">I thought it was thrown away</a></h2>
 	<h1><a href="pg2.html">You will need it when you go back.</a></h1>
@@ -152,16 +126,6 @@ a{
 	<div id="circle8" class="circles"></div>
 	<div id="circle9" class="circles"></div>
 	<div id="circle10" class="circles"></div>
-
-<script>
-	function openNav() {
-	document.getElementById("mySidenav").style.width = "250px";
-	}
-
-	function closeNav() {
-	document.getElementById("mySidenav").style.width = "0";
-	}
-</script>
 
 </body>
 </html>
