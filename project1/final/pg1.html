@@ -87,7 +87,17 @@ a{
 }
 #line4{
 	margin-top:100px;
-	margin-bottom:200px;
+	margin-bottom:50px;
+}
+.next{
+	position:absolute;
+	right:100px;
+	bottom:30px;
+	opacity:0.5;
+	transition:opacity .25s ease-in-out;
+}
+.next:hover{
+	opacity:1;
 }
 
 @keyframes float{
@@ -209,10 +219,11 @@ a{
   </div>
   <span style="font-size:30px;cursor:pointer;font-family:monospace;color:white;margin-left:-250px;" onclick="openNav()">&#9776; open</span>
 
-	<h1>Hide this.</h1>
-	<h2>I th<a href="#" class="move">o</a>ught it was thrown away.</h2>
-	<h1>You will need it when you go back.</h1>
-	<h2 id="line4">This is the card given to me when we left…</h2>
+	<h1><a href="pg2.html">Hide this.</a></h1>
+	<h2><a href="pg2.html">I thought it was thrown away.</a></h2>
+	<h1><a href="pg2.html">You will need it when you go back.</a></h1>
+	<h2 id="line4"><a href="pg2.html">This is the card given to me when we left…</a></h2>
+	<h2 class="next"><a href="pg2.html">►►</a></h2>
 	
 	<div id="circle1" class="circles"></div>
 	<div id="circle2" class="circles"></div>

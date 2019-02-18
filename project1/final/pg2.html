@@ -71,8 +71,19 @@ h2{
 }
 a{
 	color:#ece2d3;
+	text-decoration:none; 
 	font-size:60pt;
-	text-decoration:none;
+}
+.next{
+	position:absolute;
+	right:100px;
+	bottom:30px;
+	opacity:0.5;
+	transition:opacity .25s ease-in-out;
+	font-size:30pt;
+}
+.next:hover{
+	opacity:1;
 }
 #chi{
 	font-size:60pt;
@@ -171,6 +182,7 @@ a{
 	<h2 id="ro"><a href="pg3.html">ro…</a></h2>
 	<h2 id="hi2"><a href="pg3.html">ひ</a></h2>
 	<h2 id="ro2"><a href="pg3.html">ろ</a></h2>
+	<h2 class="next"><a href="pg3.html">►►</a></h2>
 	
 	<div id="circlehi" class="circles"></div>
 	<div id="circlechi" class="circles"></div>

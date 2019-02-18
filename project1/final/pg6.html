@@ -48,33 +48,8 @@
 
 body{
 	background-color:#407873;
-	margin-left:300px;
+	margin-left:100px;
 	margin-right:100px;
-	margin-top:50px;
-}
-h1{
-	color:#ece2d3;
-	font-family:'Gentium Basic', serif;
-	font-style:light;
-	font-style:italic;
-	font-size:30pt;
-	width:50%;
-	margin-top:50px;
-	line-height:42pt;
-}
-h2{
-	color:#ece2d3;
-	font-family:'Quicksand', sans-serif;
-	font-style:medium;
-	font-size:30pt;
-	text-align:right;
-	margin-left:45%;
-	margin-top:50px;
-	line-height:42pt;
-}
-a{
-	color:#ece2d3;
-	text-decoration:none;
 }
 .circles{
 	background-color:#c56c6d;
@@ -85,83 +60,104 @@ a{
 	border-radius:80px;
 	position:absolute;
 }
-#circle1{
-	top:100px;
-	right:-60px;
+h2{
+	color:#ece2d3;
+	font-family:'Quicksand', sans-serif;
+	font-style:medium;
+	font-size:30pt;
+	text-align:right;
+	margin-left:45%;
 }
-#circle2{
-	top:10px;
-	right:38%;
-	width:200px;
-	height:200px;
-	border-radius:100px;
+a{
+	color:#ece2d3;
+	font-size:60pt;
+	text-decoration:none;
 }
-#circle3{
-	top:20px;
-	right:20px;
-	width:120px;
-	height:120px;
+.next{
+	position:absolute;
+	right:100px;
+	bottom:30px;
+	opacity:0.5;
+	transition:opacity .25s ease-in-out;
+	font-size:30pt;
 }
-#circle4{
-	top:30px;
-	right:430px;
-	width:120px;
-	height:120px;
+.next:hover{
+	opacity:1;
 }
-#circle5{
-	top:70px;
-	right:80px;
-	width:180px;
-	height:180px;
-	border-radius:90px;
+#ha{
+	font-size:60pt;
+	position:absolute;
+	top:200px;
+	right:55%;
 }
-#circle6{
-	top:400px;
-	right:260px;
+#ha2{
+	font-size:60pt;
+	position:absolute;
+	top:280px;
+	right:56%;
 }
-#circle7{
-	top:500px;
-	right:400px;
-	width:120px;
-	height:120px;
+#ku{
+	font-size:60pt;
+	position:absolute;
+	top:280px;
+	right:30%;
 }
-#circle8{
-	width:200px;
-	height:200px;
-	border-radius:100px;
-	top:400px;
-	right:40px;
+#ku2{
+	font-size:60pt;
+	position:absolute;
+	top:360px;
+	right:33%;
 }
-#circle9{
-	top:400px;
-	right:260px;
+@keyframes float{
+0%{
+	transform: translateY(0);
+}
+50%{
+	transform: translateY(30%);
+}
+100%{
+	transform: translateY(0);
+}
+}
+#circleha{
+	top:340px;
+	right:28%;
+	width:140px;
+	height:140px;
+	animation-name:float;
+	animation-duration:4.6s;
+	animation-iteration-count:infinite;
+	transition-timing-function:ease-in;
+}
+#circleku{
+	top:250px;
+	right:58%;
+	animation-name:float;
+	animation-duration:3.8s;
+	animation-iteration-count:infinite;
+	transition-timing-function:ease-in;
 }
 </style>
 </head>
 <body>
-  <div id="mySidenav" class="sidenav">
+	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="../index.html">Home</a>
   <a href="project1.html">Ver.1</a>
   <a href="pg1.html">Ver.2</a>
   <a href="#">Final</a>
   </div>
-  <span style="font-size:30px;cursor:pointer;font-family:monospace;color:white;margin-left:-250px;" onclick="openNav()">&#9776; open</span>
+  <span style="font-size:30px;cursor:pointer;font-family:monospace;color:white;margin-left:-50px" onclick="openNav()">&#9776; open</span>
 
-	<h2><a href="pg7.html">You have also forgotten your real name?</a></h2>
-	<h1><a href="pg7.html">But it’s incredible that I do remember you from a long time ago. 
-	Eat this, You haven’t eaten yet, right?</a></h1>
-	<h2><a href="pg7.html">I don’t want to eat…</a></h2>
+	<h2 id="ha"><a href="pg6.html">Ha</a></h2>
+	<h2 id="ha2"><a href="pg6.html">は</a></h2>
+	<h2 id="ku"><a href="pg6.html">ku…</a></h2>
+	<h2 id="ku2"><a href="pg6.html">く</a></h2>
+	<h2 class="next"><a href="pg7.html">►►</a></h2>
 
-	<div id="circle1" class="circles"></div>
-	<div id="circle2" class="circles"></div>
-	<div id="circle3" class="circles"></div>
-	<div id="circle4" class="circles"></div>
-	<div id="circle5" class="circles"></div>
-	<div id="circle6" class="circles"></div>
-	<div id="circle7" class="circles"></div>
-	<div id="circle8" class="circles"></div>
-	<div id="circle9" class="circles"></div>
+	
+	<div id="circleha" class="circles"></div>
+	<div id="circleku" class="circles"></div>
 
 <script>
 	function openNav() {

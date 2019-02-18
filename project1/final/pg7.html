@@ -76,7 +76,7 @@ a{
 	color:#ece2d3;
 	text-decoration:none;
 }
-div{
+.circles{
 	background-color:#c56c6d;
 	width:160px;
 	height:160px;
@@ -84,6 +84,57 @@ div{
 	margin:0;
 	border-radius:80px;
 	position:absolute;
+}
+#circle1{
+	top:100px;
+	right:-60px;
+}
+#circle2{
+	top:10px;
+	right:38%;
+	width:200px;
+	height:200px;
+	border-radius:100px;
+}
+#circle3{
+	top:20px;
+	right:20px;
+	width:120px;
+	height:120px;
+}
+#circle4{
+	top:30px;
+	right:430px;
+	width:120px;
+	height:120px;
+}
+#circle5{
+	top:70px;
+	right:80px;
+	width:180px;
+	height:180px;
+	border-radius:90px;
+}
+#circle6{
+	top:400px;
+	right:260px;
+}
+#circle7{
+	top:500px;
+	right:400px;
+	width:120px;
+	height:120px;
+}
+#circle8{
+	width:200px;
+	height:200px;
+	border-radius:100px;
+	top:400px;
+	right:40px;
+}
+#circle9{
+	top:400px;
+	right:260px;
 }
 </style>
 </head>
@@ -95,10 +146,22 @@ div{
   <a href="pg1.html">Ver.2</a>
   <a href="#">Final</a>
   </div>
-  <span style="font-size:30px;cursor:pointer;font-family:monospace;color:white;margin-left:-250px" onclick="openNav()">&#9776; open</span>
+  <span style="font-size:30px;cursor:pointer;font-family:monospace;color:white;margin-left:-250px;" onclick="openNav()">&#9776; open</span>
 
-	<h1><a href="pg8.html">I applied magic to this and will make you feel better. Go ahead.</a></h1>
-	<h1><a href="pg8.html">It must had been hard for you. Go ahead and help yourself.</a></h1>
+	<h2><a href="pg7.html">You have also forgotten your real name?</a></h2>
+	<h1><a href="pg7.html">But it’s incredible that I do remember you from a long time ago. 
+	Eat this, You haven’t eaten yet, right?</a></h1>
+	<h2><a href="pg7.html">I don’t want to eat…</a></h2>
+
+	<div id="circle1" class="circles"></div>
+	<div id="circle2" class="circles"></div>
+	<div id="circle3" class="circles"></div>
+	<div id="circle4" class="circles"></div>
+	<div id="circle5" class="circles"></div>
+	<div id="circle6" class="circles"></div>
+	<div id="circle7" class="circles"></div>
+	<div id="circle8" class="circles"></div>
+	<div id="circle9" class="circles"></div>
 
 <script>
 	function openNav() {
@@ -109,6 +172,5 @@ div{
 	document.getElementById("mySidenav").style.width = "0";
 	}
 </script>
-
 </body>
 </html>
