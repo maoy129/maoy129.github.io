@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 500px;
+  left: 500px;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family:monospace;
+  border-radius:0px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body{
+	background-color:#407873;
+}
+h2{
+	color:#ece2d3;
+	font-family:'Quicksand', sans-serif;
+	font-style:medium;
+	font-size:60pt;
+	text-align:middle;
+	position:absolute;
+	top:20%;
+	left:25%;
+}
+h1{
+	color:#ece2d3;
+	font-family:monospace;
+	font-size:14pt;
+	text-align:middle;
+	position:absolute;
+	top:50%;
+	left:25%;
+	width:60vmax;
+}
+a{
+	color:#ece2d3;
+	text-decoration:none;
+}
+.next{
+	position:absolute;
+	top:70%;
+	opacity:0.5;
+	transition:opacity .25s ease-in-out;
+}
+.next:hover{
+	opacity:1;
+}
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../../index.html">Home</a>
+  <a href="../project1.html">Ver.1</a>
+  <a href="../pg1.html">Ver.2</a>
+  <a href="#">Final</a>
+  </div>
+<span style="font-size:30px;cursor:pointer;font-family:monospace;color:white;margin-left:-250px;" onclick="openNav()">&#9776; open</span>
+
+<h2>Spirited Away</h2>
+<h1>10-year-old Chihiro and her parents stumble upon a seemingly abandoned amusement park. After her mother and father are turned into giant pigs, Chihiro meets Haku, who explains that the park is a resort for supernatural beings who need a break from their time spent in the earthly realm, and that she must work there to free herself and her parents.</h1>
+<h2 class="next"><a href="pg1.html">►►</a></h2>
+
+<script>
+	function openNav() {
+	document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
+</body>
+</html>
