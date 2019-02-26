@@ -4,7 +4,7 @@
 	<title>Recipe</title>
 <style>
 body{
-	background-color:white;
+	background-color:#f3e5d8;
 	font-size:16pt;
 }
 .title{
@@ -17,15 +17,7 @@ body{
 #eng{
 	top:1em;
 	left:2em;
-	color:black;
-}
-#chn{
-	font-size:2em;
-	position:absolute;
-	transform:rotate(90deg);
-	top:8em;
-	left:-0.2em;
-	color:black;
+	color:#4d3319;
 }
 .subtitle{
 	color:black;
@@ -34,6 +26,7 @@ body{
 	font-weight:bold;
 	position:absolute;
 	left:10em;
+	color:#4d3319;
 }
 #back{
 	position:relative;
@@ -47,22 +40,24 @@ body{
 }
 #ins{
 	top:8.3em;
+	color:#4d3319;
 }
 a{
 	text-decoration:none;
-	color:black;
+	color:#cc9966;
 	position:absolute;
 	top:15em;
 	left:2em;
 }
 a:hover{
-	color:blue;
+	color:#4d3319;
 }
 ul{
 	font-size:1em;
 	font-family:Monaco;
 	position:absolute;
-	color:black;
+	color:#4d3319;
+	list-style-type:none;
 }
 #list1{
 	top:14em;
@@ -72,48 +67,72 @@ ul{
 	top:14em;
 	left:24em;
 }
-ol{
-	font-size:1em;
-	font-family:Monaco;
-	width:45vmax;
-	position:absolute;
-	left:20em;
-	list-style-type:decimal-leading-zero;
-	top:17em;
-	margin-bottom:10em;
-	color:#75a742;
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
 }
-.check{
-	display:none;
-	color:blue;
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-#guide{
-	font-family:Monaco;
-	color:black;
-	position:absolute;
-	top:26em;
-	left:16em;
-	font-size:0.8em;
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #dfbf9f;
+}
+.container:hover input ~ .checkmark {
+  background-color: #cc9966;
+}
+.container input:checked ~ .checkmark {
+  background-color: #4d3319;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 </style>
 </head>
 <body>
 	<p class=subtitle id="back"><a href="index.html">◄◄ Back</a></p>
 	<p class=title id="eng">Red Bean Milk Pudding</p>
-	<p class=title id="chn">红 豆 双 皮 奶</p>
 	<p class=subtitle id="ins">Ingredients:<p class=subtitle id="back"><a href="ingredients.html">◄◄ Back</a></p></p>
 	<ul class=list id="list1">Sweet Red Beans
-		<li onclick="myFunction()">150ml water<p class=check id="checkone"> √</p></li>
-		<li onclick="myFunction2()">50g red bean<p class=check id="checktwo"> √</p></li>
-		<li onclick="myFunction3()">50g sugar<p class=check id="checkthree"> √</p></li>
+		<li><label class="container">150ml water<input type="checkbox"><span class="checkmark"></span></label></li>
+		<li><label class="container">50g red bean<input type="checkbox"><span class="checkmark"></span></label></li>
+		<li><label class="container">50g sugar<input type="checkbox"><span class="checkmark"></span></label></li>
 	</ul>
 	<ul class=list id="list2">Milk Pudding
-		<li onclick="myFunction4()">250ml milk<p class=check id="checkfour"> √</p></li>
-		<li onclick="myFunction5()">1 egg white<p class=check id="checkfive"> √</p></li>
-		<li onclick="myFunction6()">15g sugar<p class=check id="checksix"> √</p></li>
+		<li><label class="container">250ml milk<input type="checkbox"><span class="checkmark"></span></label></li>
+		<li><label class="container">1 egg white<input type="checkbox"><span class="checkmark"></span></label></li>
+		<li><label class="container">15g sugar<input type="checkbox"><span class="checkmark"></span></label></li>
 		<p class=subtitle id="next"><a href="instruction.html">First Steps: Sweet Red Beans ►►</a></p>
 	</ul>
-	<p id="guide">*double click to check √ ingredients </p>
 <script>
 function myFunction() {
   var x = document.getElementById("checkone")
