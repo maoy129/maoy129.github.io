@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipe</title>
+<style>
+body{
+	background-color:#cb4d4d;
+	font-size:16pt;
+}
+.title{
+	color:#772222;
+	font-size:3em;
+	font-family:Menlo;
+	font-weight:bold;
+	transform:rotate(97deg);
+	position:absolute;
+	letter-spacing:-9pt;
+}
+#eng{
+	top:4.5em;
+	left:-0.5em;
+}
+#chn{
+	font-size:2em;
+	position:relative;
+	top:1em;
+	right:-8em;
+	color:#772222;
+	letter-spacing:-13pt;
+	transform:rotate(68deg);
+}
+.subtitle{
+	color:#772222;
+	font-size:1.3em;
+	font-family:Menlo;
+	font-weight:bold;
+	position:absolute;
+	left:13em;
+	letter-spacing:-3pt;
+	transform:rotate(-20deg);
+}
+#ing{
+	top:7.5em;
+	transform:rotate(33deg);
+}
+#ins{
+	left:-1em;
+	font-size:3em;
+}
+a{
+	text-decoration:none;
+	color:#772222;
+	position:absolute;
+	top:0.2em;
+	left:1.1em;
+	width:8em;
+}
+a:hover{
+	color:#dd8888;
+}
+ul{
+	font-size:1em;
+	font-family:Monaco;
+	position:absolute;
+	color:#772222;
+	letter-spacing:-3pt;
+	list-style-type:none;
+}
+.list{
+	top:15em;
+	left:16.5em;
+	width:25em;
+}
+.steps{
+	display:none;
+}
+li:hover{
+	color:#dd8888;
+}
+</style>
+</head>
+<body>
+	<p class=title id="eng">Red Bean Milk Pudding</p>
+	<p class=title id="chn">红 豆 双 皮 奶</p>
+	<p class=subtitle id="ing">Milk Pudding:</p>
+	<ul class=list>
+		<li id="stepone" onclick="myFunction()">Heat up milk to a light simmer and pour hot milk into a bowl for it to cool down under room temperature. ►►</li>
+		<li class=steps id="steptwo" onclick="myFunction2()">Separate egg white from egg yolk. ►►</li>
+		<li class=steps id="stepthree" onclick="myFunction3()">Poke a whole into the edge of the film that formed on top of the milk surface and carefully pour about 200ml of milk into a separate bowl. ►►</li>
+		<li class=steps id="stepfour" onclick="myFunction4()">Mix milk, egg whites, and sugar. ►►</li>
+		<li class=steps id="stepfive" onclick="myFunction5()">Pour mixture back from the edge of the original bowl. The film should remain floating on top. ►►</li>
+		<li class=steps id="stepsix" onclick="myFunction6()">Steam on medium heat for 10 minutes. ►►</li>
+		<li class=steps id="stepseven">Refrigerate for 2 hours and put red beans on top. </li>
+		<p class=title id="chn">红 豆 双 皮 奶</p>
+		<p class=subtitle id="ins"><a href="index.html">►► ►► ►► ►► ►► ►► ►► ►► ►► ►►</a></p>
+	</ul>
+
+<script>
+function myFunction() {
+  document.getElementById("steptwo").style.display = "block";
+  document.getElementById("stepone").style.display = "none";
+}
+function myFunction2() {
+	document.getElementById("stepthree").style.display = "block";
+	document.getElementById("steptwo").style.display = "none";
+}
+function myFunction3() {
+	document.getElementById("stepfour").style.display = "block";
+	document.getElementById("stepthree").style.display = "none";
+}
+function myFunction4() {
+	document.getElementById("stepfive").style.display = "block";
+	document.getElementById("stepfour").style.display = "none";
+}
+function myFunction5() {
+	document.getElementById("stepsix").style.display = "block";
+	document.getElementById("stepfive").style.display = "none";
+}
+function myFunction6() {
+	document.getElementById("stepseven").style.display = "block";
+	document.getElementById("stepsix").style.display = "none";
+}
+</script>
+</body>
+</html>

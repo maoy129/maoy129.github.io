@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipe</title>
+<style>
+body{
+	background-color:white;
+	font-size:16pt;
+}
+.title{
+	color:black;
+	font-size:3em;
+	font-family:Menlo;
+	font-weight:bold;
+	position:absolute;
+}
+#eng{
+	top:1em;
+	left:2em;
+	color:black;
+}
+#chn{
+	font-size:2em;
+	position:absolute;
+	transform:rotate(90deg);
+	top:8em;
+	left:-0.2em;
+	color:black;
+}
+.subtitle{
+	color:black;
+	font-size:1.3em;
+	font-family:Menlo;
+	font-weight:bold;
+	position:absolute;
+	left:10em;
+}
+#back{
+	position:relative;
+	left:28em;
+	top:10em;
+}
+#next{
+	left:-11em;
+	top:-6.5em;
+	width:23em;
+}
+#ins{
+	top:8.3em;
+}
+a{
+	text-decoration:none;
+	color:black;
+	position:absolute;
+	top:15em;
+	left:2em;
+}
+a:hover{
+	color:blue;
+}
+ul{
+	font-size:1em;
+	font-family:Monaco;
+	position:absolute;
+	color:black;
+}
+#list1{
+	top:14em;
+	left:11.5em;
+}
+#list2{
+	top:14em;
+	left:24em;
+}
+ol{
+	font-size:1em;
+	font-family:Monaco;
+	width:45vmax;
+	position:absolute;
+	left:20em;
+	list-style-type:decimal-leading-zero;
+	top:17em;
+	margin-bottom:10em;
+	color:#75a742;
+}
+.check{
+	display:none;
+	color:blue;
+}
+#guide{
+	font-family:Monaco;
+	color:black;
+	position:absolute;
+	top:26em;
+	left:16em;
+	font-size:0.8em;
+}
+</style>
+</head>
+<body>
+	<p class=subtitle id="back"><a href="index.html">◄◄ Back</a></p>
+	<p class=title id="eng">Red Bean Milk Pudding</p>
+	<p class=title id="chn">红 豆 双 皮 奶</p>
+	<p class=subtitle id="ins">Ingredients:<p class=subtitle id="back"><a href="ingredients.html">◄◄ Back</a></p></p>
+	<ul class=list id="list1">Sweet Red Beans
+		<li onclick="myFunction()">150ml water<p class=check id="checkone"> √</p></li>
+		<li onclick="myFunction2()">50g red bean<p class=check id="checktwo"> √</p></li>
+		<li onclick="myFunction3()">50g sugar<p class=check id="checkthree"> √</p></li>
+	</ul>
+	<ul class=list id="list2">Milk Pudding
+		<li onclick="myFunction4()">250ml milk<p class=check id="checkfour"> √</p></li>
+		<li onclick="myFunction5()">1 egg white<p class=check id="checkfive"> √</p></li>
+		<li onclick="myFunction6()">15g sugar<p class=check id="checksix"> √</p></li>
+		<p class=subtitle id="next"><a href="instruction.html">First Steps: Sweet Red Beans ►►</a></p>
+	</ul>
+	<p id="guide">*double click to check √ ingredients </p>
+<script>
+function myFunction() {
+  var x = document.getElementById("checkone")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+	var x = document.getElementById("checktwo")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction3() {
+	 var x = document.getElementById("checkthree")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction4() {
+	var x = document.getElementById("checkfour")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction5() {
+  var x = document.getElementById("checkfive")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction6() {
+  var x = document.getElementById("checksix")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

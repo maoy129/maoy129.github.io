@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipe</title>
+<style>
+body{
+	background-color:white;
+	font-size:16pt;
+}
+.title{
+	color:black;
+	font-size:3em;
+	font-family:Menlo;
+	font-weight:bold;
+	position:absolute;
+}
+#eng{
+	top:1em;
+	left:2em;
+	color:black;
+}
+#chn{
+	font-size:2em;
+	position:absolute;
+	transform:rotate(90deg);
+	top:8em;
+	left:-0.2em;
+	color:black;
+}
+.subtitle{
+	color:black;
+	font-size:1.3em;
+	font-family:Menlo;
+	font-weight:bold;
+	position:absolute;
+}
+#ins{
+	left:10em;
+	top:8em;
+}
+#next{
+
+}
+a{
+	text-decoration:none;
+	color:black;
+	position:absolute;
+	top:-1.2em;
+	left:1.1em;
+	width:8em;
+}
+a:hover{
+	color:blue;
+}
+.steps{
+	display:none;
+}
+ul{
+	font-size:1em;
+	font-family:Monaco;
+	position:absolute;
+	color:black;
+	list-style-type:none;
+}
+.list{
+	top:13.5em;
+	left:10.7em;
+	width:22em;
+}
+li{
+	padding:0.5em;
+}
+li:hover{
+	color:blue;
+}
+#list2{
+	top:13.5em;
+	left:34em;
+}
+</style>
+</head>
+<body>
+	<p class=title id="eng">Red Bean Milk Pudding</p>
+	<p class=title id="chn">红 豆 双 皮 奶</p>
+	<p class=subtitle id="ins">Milk Pudding:<p class=subtitle id="back"><a href="instruction.html">◄◄ Back</a></p></p>
+	<ul class=list>
+		<li id="stepone" onclick="myFunction()">STEP 1/7: Heat up milk to a light simmer and pour hot milk into a bowl for it to cool down under room temperature. ►►</li>
+		<li class=steps id="steptwo" onclick="myFunction2()">STEP 2/7: Separate egg white from egg yolk. ►►</li>
+		<li class=steps id="stepthree" onclick="myFunction3()">STEP 3/7: Poke a whole into the edge of the film that formed on top of the milk surface and carefully pour about 200ml of milk into a separate bowl. ►►</li>
+	</ul>
+	<ul class=list id="list2">
+		<li class=steps id="stepfour" onclick="myFunction4()">STEP 4/7: Mix milk, egg whites, and sugar. ►►</li>
+		<li class=steps id="stepfive" onclick="myFunction5()">STEP 5/7: Pour mixture back from the edge of the original bowl. The film should remain floating on top. ►►</li>
+		<li class=steps id="stepsix" onclick="myFunction6()">STEP 6/7: Steam on medium heat for 10 minutes. ►►</li>
+		<li class=steps id="stepseven">STEP 7/7: Refrigerate for 2 hours and put red beans on top. <p class=subtitle id="next">Done!</p></li>
+	</ul>
+
+<script>
+function myFunction() {
+  document.getElementById("steptwo").style.display = "block";
+}
+function myFunction2() {
+	document.getElementById("stepthree").style.display = "block";
+}
+function myFunction3() {
+	document.getElementById("stepfour").style.display = "block";
+}
+function myFunction4() {
+	document.getElementById("stepfive").style.display = "block";
+}
+function myFunction5() {
+	document.getElementById("stepsix").style.display = "block";
+}
+function myFunction6() {
+	document.getElementById("stepseven").style.display = "block";
+	document.getElementById("next").style.display = "block";
+}
+</script>
+
+</body>
+</html>

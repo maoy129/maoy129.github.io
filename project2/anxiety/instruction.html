@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipe</title>
+<style>
+body{
+	background-color:#cb4d4d;
+	font-size:16pt;
+}
+.title{
+	color:#772222;
+	font-size:3em;
+	font-family:Menlo;
+	font-weight:bold;
+	position:absolute;
+	letter-spacing:-9pt;
+}
+#eng{
+	top:4.5em;
+	left:-0.5em;
+	transform:rotate(83deg);
+}
+#chn{
+	font-size:2em;
+	position:relative;
+	top:1em;
+	right:-8em;
+	color:#772222;
+	letter-spacing:-13pt;
+	transform:rotate(96deg);
+}
+.subtitle{
+	color:#772222;
+	font-size:1.3em;
+	font-family:Menlo;
+	font-weight:bold;
+	position:absolute;
+	left:13em;
+	letter-spacing:-3pt;
+}
+#ing{
+	top:7.5em;
+	transform:rotate(-20deg);
+}
+#ins{
+	left:-1em;
+	font-size:3em;
+	transform:rotate(-13deg);
+}
+a{
+	text-decoration:none;
+	color:#772222;
+	position:absolute;
+	top:-1.2em;
+	left:1.1em;
+	width:8em;
+}
+a:hover{
+	color:#dd8888;
+}
+.steps{
+	display:none;
+}
+ul{
+	font-size:1em;
+	font-family:Monaco;
+	position:absolute;
+	color:#772222;
+	letter-spacing:-3pt;
+	list-style-type:none;
+}
+.list{
+	top:13em;
+	left:16.5em;
+	width:25em;
+}
+li:hover{
+	color:#dd8888;
+}
+</style>
+</head>
+<body>
+	<p class=title id="eng">Red Bean Milk Pudding</p>
+	<p class=title id="chn">红 豆 双 皮 奶</p>
+	<p class=subtitle id="ing">Sweet Red Beans:</p>
+	<ul class=list>
+		<li id="stepone" onclick="myFunction()">Rinse red beans. ►►</li>
+		<li class=steps id="steptwo" onclick="myFunction2()">Put red beans and water into pot. ►►</li>
+		<li class=steps id="stepthree" onclick="myFunction3()">Boil without lid for 1 minute. Turn off heat, put on lid, and let it rest for 15 minutes. ►►</li>
+		<li class=steps id="stepfour" onclick="myFunction4()">Repeat step 3 for 7 times. This makes sure that the outer shell of the red beans remain in shape. ►►</li>
+		<li class=steps id="stepfive" onclick="myFunction5()">Turn on heat again and add sugar. Turn off heat when it boils. Drain the remaining liquid. ►►</li>
+		<li class=steps id="stepsix">Put beans into a container and let it rest over night.</li>
+		<p class=title id="chn">红 豆 双 皮 奶</p>
+		<p class=subtitle id="ins"><a href="instruction2.html">►► ►► ►► ►► ►► ►► ►► ►► ►► ►►</a></p>
+	</ul>
+
+<script>
+function myFunction() {
+  document.getElementById("steptwo").style.display = "block";
+  document.getElementById("stepone").style.display = "none";
+}
+function myFunction2() {
+	document.getElementById("stepthree").style.display = "block";
+	document.getElementById("steptwo").style.display = "none";
+}
+function myFunction3() {
+	document.getElementById("stepfour").style.display = "block";
+	document.getElementById("stepthree").style.display = "none";
+}
+function myFunction4() {
+	document.getElementById("stepfive").style.display = "block";
+	document.getElementById("stepfour").style.display = "none";
+}
+function myFunction5() {
+	document.getElementById("stepsix").style.display = "block";
+	document.getElementById("stepfive").style.display = "none";
+}
+</script>
+
+</body>
+</html>
