@@ -55,21 +55,18 @@ body{
 	top:2.2em;
 	width:23em;
 }
-p a{
+a{
 	text-decoration:none;
 	color:#cc9966;
 	position:absolute;
 	top:-1.2em;
 	left:1.1em;
 }
-p a:hover{
+a:hover{
 	color:#4d3319;
 }
 .steps{
 	display:block;
-}
-#steptwo,#stepthree,#stepfour,#stepfive,#stepsix{
-	color:#cc9966;
 }
 ul{
 	font-size:1em;
@@ -108,44 +105,6 @@ div{
 div:hover{
 	background-color:#cc9966;
 }
-div:active{
-	background-color:#4d3319;
-}
-div a{
-	text-decoration:none;
-	padding:1.5em;
-}
-div a:hover{
-	color:#4d3319;
-}
-div a:active{
-	color:#f3e5d8;
-}
-div a.numberone:visited{
-	color:#f3e5d8;
-}
-div a.numberone:link{
-	color:#f3e5d8;
-}
-div a.numberx:visited{
-	color:#4d3319;
-}
-div a.numberx:link{
-	color:#4d3319;
-}
-#number1{
-	background-color:#4d3319;
-	color:#f3e5d8;
-}
-#number4{
-	margin-top:2.8em;
-}
-#number5{
-	margin-top:4.6em;
-}
-#number6{
-	margin-top:4.6em;
-}
 </style>
 </head>
 <body>
@@ -153,12 +112,12 @@ div a.numberx:link{
 	<p class=subtitle id="ins">Sweet Red Beans:<p class=subtitle id="back"><a href="ingredients.html">◄◄ Back</a></p></p>
 	<p class=subtitle id="next"><a href="instruction2.html">Continue ►►</a></p>
 	<p class=subtitle id="steps">Steps
-		<div id="number1" ><a class=numberone href="instruction.html">1</a></div>
-		<div id="number2"><a class=numberx href="instruction1-2.html">2</a></div>
-		<div id="number3"><a class=numberx href="instruction1-3.html">3</a></div>
-		<div id="number4"><a class=numberx href="instruction1-4.html">4</a></div>
-		<div id="number5"><a class=numberx href="instruction1-5.html">5</a></div>
-		<div id="number6"><a class=numberx href="instruction1-6.html">6</a></div>
+		<div id="number1" onclick="myFunction()">1</div>
+		<div id="number2" onclick="myFunction2()">2</div>
+		<div id="number3" onclick="myFunction3()">3</div>
+		<div id="number4" onclick="myFunction4()">4</div>
+		<div id="number5" onclick="myFunction5()">5</div>
+		<div id="number6" onclick="myFunction6()">6</div>
 	</p>
 	
 	<ul class=list>
@@ -170,6 +129,44 @@ div a.numberx:link{
 		<li class=steps id="stepsix">Put beans into a container and let it rest over night.</li>
 	</ul>
 
+<script>
+function myFunction() {
+  document.getElementById("stepone").style.display = "block";
+  document.getElementById("number1").style.backgroundColor = "#4d3319";
+  document.getElementById("number1").style.color = "#f3e5d8";
+  	document.getElementById("number2","number3","number4","number5","number6").style="initial";
+}
+function myFunction2() {
+	document.getElementById("steptwo").style.display = "block";
+	document.getElementById("number2").style.backgroundColor = "#4d3319";
+ 	document.getElementById("number2").style.color = "#f3e5d8";
+ 	document.getElementById("number1","number3","number4","number5","number6").style="initial";
+}
+function myFunction3() {
+	document.getElementById("stepthree").style.display = "block";
+	document.getElementById("number3").style.backgroundColor = "#4d3319";
+ 	document.getElementById("number3").style.color = "#f3e5d8";
+ 	document.getElementById("number1","number2","number4","number5","number6").style="initial";
+}
+function myFunction4() {
+	document.getElementById("stepfour").style.display = "block";
+	document.getElementById("number4").style.backgroundColor = "#4d3319";
+ 	document.getElementById("number4").style.color = "#f3e5d8";
+ 	document.getElementById("number1","number3","number2","number5","number6").style="initial";
+}
+function myFunction5() {
+	document.getElementById("stepfive").style.display = "block";
+	document.getElementById("number5").style.backgroundColor = "#4d3319";
+ 	document.getElementById("number5").style.color = "#f3e5d8";
+ 	document.getElementById("number1","number3","number4","number2","number6").style="initial";
+}
+function myFunction6() {
+	document.getElementById("stepsix").style.display = "block";
+	document.getElementById("number6").style.backgroundColor = "#4d3319";
+ 	document.getElementById("number6").style.color = "#f3e5d8";
+ 	document.getElementById("number1","number3","number4","number2","number2").style="initial";
+}
+</script>
 
 </body>
 </html>
