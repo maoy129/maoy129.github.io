@@ -3,6 +3,7 @@
 <head>
 	<title>Recipe</title>
 <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Work+Sans:900');
 html{
 	transform: scale(0.85);
    	transform-origin: 0 0;
@@ -15,7 +16,6 @@ body{
 }
 .title{
 	color:#4d3319;
-	font-size:3em;
 	font-family:Menlo;
 	font-weight:bold;
 	position:absolute;
@@ -23,6 +23,7 @@ body{
 #eng{
 	top:1em;
 	left:2em;
+	font-size:5vmax;
 	color:#4d3319;
 }
 .subtitle{
@@ -69,28 +70,20 @@ p a:hover{
 }
 .steps{
 	display:block;
+	font-size:1em;
+	font-family:Monaco;
+	position:relative;
+	left:6em;
+	top:-2.5em;
+	width:35vw;
+	text-align:left;
+	color:#4d3319;
+	line-height:1.8em;
 }
 #steptwo,#stepthree,#stepfour,#stepfive,#stepsix{
 	color:#cc9966;
 }
-ul{
-	font-size:1em;
-	font-family:Monaco;
-	position:absolute;
-	color:#4d3319;
-	list-style-type:none;
-	line-height:1.8em
-}
-.list{
-	top:13.3em;
-	left:13.7em;
-	width:28em;
-}
-li{
-	padding-bottom:0.65em;
-	padding-top:0.5em;
-}
-div{
+.xx{
 	background-color:#dfbf9f;
 	width:3.4em;
 	height:1.6em;
@@ -107,10 +100,10 @@ div{
 	top:13.5em;
 	left:11em;
 }
-div:hover{
+.xx:hover{
 	background-color:#cc9966;
 }
-div:active{
+.xx:active{
 	background-color:#4d3319;
 }
 div a{
@@ -154,23 +147,38 @@ div a.numberx:link{
 	<p class=title id="eng">Red Bean Milk Pudding</p>
 	<p class=subtitle id="ins">Sweet Red Beans:<p class=subtitle id="back"><a href="ingredients.html">◄◄ Back</a></p></p>
 	<p class=subtitle id="next"><a href="instruction2.html">Continue ►►</a></p>
-	<p class=subtitle id="steps">Steps
-		<div id="number1" ><a class=numberone href="instruction.html">1</a></div>
-		<div id="number2"><a class=numberx href="instruction1-2.html">2</a></div>
-		<div id="number3"><a class=numberx href="instruction1-3.html">3</a></div>
-		<div id="number4"><a class=numberx href="instruction1-4.html">4</a></div>
-		<div id="number5"><a class=numberx href="instruction1-5.html">5</a></div>
-		<div id="number6"><a class=numberx href="instruction1-6.html">6</a></div>
-	</p>
-	
-	<ul class=list>
-		<li class=steps id="stepone">Rinse red beans.</li>
-		<li class=steps id="steptwo">Put red beans and water into pot.</li>
-		<li class=steps id="stepthree">Boil without lid for 1 minute. Turn off heat, put on lid, and let it rest for 15 minutes.</li>
-		<li class=steps id="stepfour">Repeat step 3 for 7 times. This makes sure that the outer shell of the red beans remain in shape.</li>
-		<li class=steps id="stepfive">Turn on heat again and add sugar. Turn off heat when it boils. Drain the remaining liquid.</li>
-		<li class=steps id="stepsix">Put beans into a container and let it rest over night.</li>
-	</ul>
+	<p class=subtitle id="steps">Steps</p>
+		<div class=grouped id="step1">
+			<div class=xx id="number1" ><a class=numberone href="instruction.html">1</a>
+				<p class=steps id="stepone">Rinse red beans.</p>
+			</div>
+		</div>
+		<div class=grouped id="step2">
+			<div class=xx id="number2"><a class=numberx href="instruction1-2.html">2</a>
+				<p class=steps id="steptwo">Put red beans and water into pot.</p>
+			</div>	
+		</div>
+		<div class=grouped id="step3">
+			<div class=xx id="number3"><a class=numberx href="instruction1-3.html">3</a>
+				<p class=steps id="stepthree">Boil without lid for 1 minute. Turn off heat, put on lid, and let it rest for 15 minutes.</p>
+			</div>
+		</div>
+		<div class=grouped>
+			<div class=xx id="number4"><a class=numberx href="instruction1-4.html">4</a>
+				<p class=steps id="stepfour">Repeat step 3 for 7 times. This makes sure that the outer shell of the red beans remain in shape.</p>
+			</div>
+			
+		</div>
+		<div class=grouped>
+			<div class=xx id="number5"><a class=numberx href="instruction1-5.html">5</a>
+				<p class=steps id="stepfive">Turn on heat again and add sugar. Turn off heat when it boils. Drain the remaining liquid.</p>
+			</div>
+		</div>
+		<div class=grouped>
+			<div class=xx id="number6"><a class=numberx href="instruction1-6.html">6</a>
+				<p class=steps id="stepsix">Put beans into a container and let it rest over night.</p>
+			</div>
+		</div>
 
 
 </body>

@@ -3,55 +3,47 @@
 <head>
 	<title>Recipe</title>
 <style>
-html{
-  transform: scale(0.85);
-  transform-origin: 0 0;
-  margin-left:20vw;
-  margin-top:1vh;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Work+Sans:900');
 body{
 	background-color:#f3e5d8;
-	font-size:16pt;
+	font-size:18pt;
+}
+div{
+  margin:0;
 }
 .title{
 	color:black;
-	font-size:3em;
-	font-family:Menlo;
-	font-weight:bold;
+	font-family: 'Work Sans', sans-serif;
+  font-weight:900;
 	position:absolute;
 }
 #eng{
-	top:1em;
-	left:2em;
-	color:#4d3319;
+  font-size:5vmax;
+  top:20vh;
+  left:20vw;
+  color:#4d3319;
 }
 .subtitle{
-	color:black;
-	font-size:1.3em;
-	font-family:Menlo;
-	font-weight:bold;
-	position:absolute;
-	left:10em;
-	color:#4d3319;
+  color:#4d3319;
+  font-size:2vmax;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  position:relative;
 }
 #back{
-	position:relative;
-	left:2.5em;
-	top:-14em;
+	top:-21em;
+  left:-2em;
 }
 #next{
-	left:23.3em;
-	top:-14em;
-	width:23em;
+  top:-21em;
+  left:20em;
 }
-#ins{
-  font-family:Menlo;
-  font-weight:bold;
-  font-size:2em;
-  position:absolute;
+#ing{
+  font-size:3vmax;
+  position:relative;
   transform:rotate(90deg);
-  top:8em;
-  left:-0.1em;
+  top:11em;
+  left:-9em;
   color:#4d3319;
 }
 a{
@@ -64,33 +56,41 @@ a{
 a:hover{
 	color:#4d3319;
 }
-ul{
-	font-size:1em;
-	font-family:Monaco;
-	position:absolute;
+.list1{
+	font-size:0.4vmax;
+	font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+	position:relative;
 	color:#4d3319;
 	list-style-type:none;
+  top:9em;
+  left:27em;
 }
-#list1{
-	top:14em;
-	left:9.5em;
-}
-#list2{
-	top:14em;
-	left:26.5em;
+.list2{
+  font-size:0.4vmax;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+  position:absolute;
+  color:#4d3319;
+  list-style-type:none;
+  top:44.5em;
+  left:102em;
+  width:30vmax;
 }
 #listtitle1{
-  font-family:Menlo;
-  font-weight:bold;
-  font-size:1.3em;
-  top:8.3em;
-  left:7.3em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:2vmax;
+  position:relative;
+  top:1.5em;
+  left:5.5em;
 }
 #listtitle2{
-  font-family:Menlo;
-  font-weight:bold;
-  font-size:1.3em;
-  top:8.3em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:2vmax;
+  position:relative;
+  top:0.2em;
   left:20.3em;
 }
 .container {
@@ -99,7 +99,7 @@ ul{
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.7vmax;
   user-select: none;
 }
 .container input {
@@ -113,8 +113,8 @@ ul{
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: 2.5vmax;
+  width: 2.5vmax;
   background-color: #dfbf9f;
 }
 .container:hover input ~ .checkmark {
@@ -132,43 +132,49 @@ ul{
   display: block;
 }
 .container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
+  left: 0.8vmax;
+  top: 0.35vmax;
+  width: 0.6vmax;
+  height: 1vmax;
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-div{
+.line{
   background-color:#cc9966;
-  width:0.2em;
-  height:7em;
+  width:0.1em;
+  height:3.2em;
   position:absolute;
-  top:13em;
-  left:25.5em;
+  left:6.8em;
+  top:2.5em;
+  display:flex;
 }
 </style>
 </head>
 <body>
-	<p class=title id="eng">Red Bean Milk Pudding</p>
-	<p class=subtitle id="ins">Ingredients:<p class=subtitle id="back"><a href="index.html">◄◄ Back</a></p></p>
-  <p class=subtitle id="next"><a href="instruction.html">Instruction ►►</a></p>
-  <ul class=list id="listtitle1">Sweet Red Beans</ul>
-  <ul class=list id="listtitle2">Milk Pudding</ul>
-	<ul class=list id="list1">
-		<li><label class="container">150ml water<input type="checkbox"><span class="checkmark"></span></label></li>
-		<li><label class="container">50g red bean<input type="checkbox"><span class="checkmark"></span></label></li>
-		<li><label class="container">50g sugar<input type="checkbox"><span class="checkmark"></span></label></li>
-	</ul>
-  <div></div>
-	<ul class=list id="list2">
-		<li><label class="container">250ml milk<input type="checkbox"><span class="checkmark"></span></label></li>
-		<li><label class="container">1 egg white<input type="checkbox"><span class="checkmark"></span></label></li>
-		<li><label class="container">15g sugar<input type="checkbox"><span class="checkmark"></span></label></li>
-	</ul>
+	<div class=title id="eng">Red Bean Milk Pudding
+    <div class=subtitle id="back"><a href="index.html">< Back</a></div>
+    <div class=subtitle id="next"><a href="instruction.html">Instruction ></a></div>
+    <div class=title id="ing">Ingredients:</div>
+    <div id="listtitle1">Sweet Red Beans</div>
+    <div id="listtitle2">Milk Pudding</div>
+    <div class=list1>
+        <div><label class="container">150ml water<input type="checkbox"><span class="checkmark"></span></label></div>
+        <div><label class="container">50g red bean<input type="checkbox"><span class="checkmark"></span></label></div>
+        <div><label class="container">50g sugar<input type="checkbox"><span class="checkmark"></span></label></div>
+    </div>
+    <div class=list2>
+        <div><label class="container">250ml milk<input type="checkbox"><span class="checkmark"></span></label></div>
+        <div><label class="container">1 egg white<input type="checkbox"><span class="checkmark"></span></label></div>
+        <div><label class="container">15g sugar<input type="checkbox"><span class="checkmark"></span></label></div>
+    </div>
+    <div class=line></div>
+  </div>
+
+
+
 <script>
 function myFunction() {
   var x = document.getElementById("checkone")

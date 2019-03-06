@@ -3,49 +3,41 @@
 <head>
 	<title>Recipe</title>
 <style>
-html{
-	transform:translateX(10px);
-	transform: scale(0.85);
-   	transform-origin: 0 0;
-   	margin-left:20vw;
-   	margin-top:1vh;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Work+Sans:900');
 body{
 	background-color:#f3e5d8;
-	font-size:16pt;
+	font-size:18pt;
 }
 .title{
 	color:#4d3319;
-	font-size:3em;
-	font-family:Menlo;
-	font-weight:bold;
+	font-family: 'Work Sans', sans-serif;
+	font-weight:900;
 	position:absolute;
 }
 #eng{
-	top:1em;
-	left:2em;
+	font-size:5vmax;
+	top:20vh;
+	left:20vw;
 	color:#4d3319;
 }
 #chn{
-	font-size:2em;
-	position:absolute;
+	font-size:3vmax;
+	position:relative;
 	transform:rotate(90deg);
-	top:8em;
-	left:-0.2em;
+	top:10em;
+	left:-9em;
 	color:#4d3319;
 }
 .text{
-	font-size:1em;
-	font-family:Monaco;
+	font-size:1.7vmax;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
 	width:47vmax;
 	position:relative;
-	left:11.5em;
+	left:6em;
+	top:-1em;
 	color:#4d3319;
-	line-height:1.8em;
-}
-#p1{
-	top:11em;
-	color:#;
+	line-height:2em;
 }
 a{
 	text-decoration:none;
@@ -56,28 +48,23 @@ a:hover{
 }
 .subtitle{
 	color:#4d3319;
-	font-size:1.3em;
-	font-family:Menlo;
-	font-weight:bold;
-	position:absolute;
-	top:20em;
+	font-size:2vmax;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	position:relative;
 }
 #ing{
-	top:1em;
-	left:25.3em;
-}
-#ins{
-	left:20em;
+	top:-6em;
+	left:21.7em;
 }
 </style>
 </head>
 <body>
-	<p class=title id="eng">Red Bean Milk Pudding
-		<p class=text id="p1">The red bean milk pudding, or known as 红豆双皮奶 in Chinese, was one of my favorite desserts to eat as a child. During my elementary school years, my grandparents used to take me to a local dessert spot and buy me a red bean milk pudding almost every Friday afterschool. What makes it special is that it has a layer of film formed by the milk on top. This is a simple recipe that is also very delicious. </p>
-	</p>
-	<p class=title id="chn">红 豆 双 皮 奶</p>
-
-	<p class=subtitle id="ing"><a href="ingredients.html">Ingredients ►►</a></p>
+	<div class=title id="eng">Red Bean Milk Pudding
+		<div class=subtitle id="ing"><a href="ingredients.html">Ingredients ></a></div>
+		<div class=title id="chn">红 豆 双 皮 奶</div>
+		<div class=text>The red bean milk pudding, or known as 红豆双皮奶 in Chinese, was one of my favorite desserts to eat as a child. During my elementary school years, my grandparents used to take me to a local dessert spot and buy me a red bean milk pudding almost every Friday afterschool. What makes it special is that it has a layer of film formed by the milk on top. This is a simple recipe that is also very delicious. </div>
+	</div>
 
 </body>
 </html>
