@@ -3,183 +3,131 @@
 <head>
 	<title>Recipe</title>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Work+Sans:900');
-html{
-	transform: scale(0.85);
-   	transform-origin: 0 0;
-   	margin-left:20vw;
-   	margin-top:1vh;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Work+Sans:900');
 body{
 	background-color:#f3e5d8;
-	font-size:16pt;
+	font-size:18pt;
 }
 .title{
 	color:#4d3319;
-	font-family:Menlo;
-	font-weight:bold;
+	font-family: 'Work Sans', sans-serif;
+	font-weight:900;
 	position:absolute;
 }
 #eng{
-	top:1em;
-	left:2em;
 	font-size:5vmax;
+	top:20vh;
+	left:20vw;
 	color:#4d3319;
 }
 .subtitle{
 	color:#4d3319;
-	font-size:1.3em;
-	font-family:Menlo;
-	font-weight:bold;
-	position:absolute;
-	left:10em;
+	font-size:2vmax;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	position:relative;
 }
 #ins{
-  font-family:Menlo;
-  font-weight:bold;
-  font-size:2em;
-  position:absolute;
-  transform:rotate(90deg);
-  top:9.3em;
-  left:-1.3em;
-  color:#4d3319;
+  	font-size:3vmax;
+	position:relative;
+	transform:rotate(90deg);
+	top:11em;
+	left:-9em;
+	color:#4d3319;
 }
 #steps{
-	top:8.3em;
-	left:8.75em;
+	top:1.3em;
+	left:5.7em;
 }
 #back{
-	position:relative;
-	left:3.4em;
-	top:2.2em;
+	top:-21em;
+  	left:-2em;
 }
 #next{
-	left:26em;
-	top:2.2em;
-	width:23em;
+	top:-21em;
+  	left:21em;
 }
-p a{
+a.page{
 	text-decoration:none;
 	color:#cc9966;
 	position:absolute;
-	top:-1.2em;
-	left:1.1em;
+	top:15em;
+	left:2em;
 }
-p a:hover{
+a.page:hover{
 	color:#4d3319;
 }
 .steps{
 	display:block;
 	font-size:1em;
-	font-family:Monaco;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
 	position:relative;
-	left:6em;
-	top:-2.5em;
+	left:2.5em;
+	top:-1.5em;
 	width:35vw;
 	text-align:left;
 	color:#4d3319;
 	line-height:1.8em;
 }
-#steptwo,#stepthree,#stepfour,#stepfive,#stepsix{
-	color:#cc9966;
-}
 .xx{
-	background-color:#dfbf9f;
-	width:3.4em;
-	height:1.6em;
-	border-radius:0.2em;
-	text-align:center;
-	margin-top:1em;
-	margin-bottom:1em;
-	padding-right:0.1em;
-	padding-top:0.3em;
-	font-size:1em;
-	font-family:Monaco;
+	font-size:1.7vmax;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
 	color:#4d3319;
 	position:relative;
-	top:13.5em;
-	left:11em;
+	top:3em;
+	left:8em;
 }
-.xx:hover{
-	background-color:#cc9966;
-}
-.xx:active{
-	background-color:#4d3319;
-}
-div a{
+a.stepnumber{
 	text-decoration:none;
-	padding:1.5em;
-}
-div a:hover{
 	color:#4d3319;
 }
-div a:active{
-	color:#f3e5d8;
+a.stepnumber:hover .arrows{
+	display:inline;
+	position:relative;
+	left:-3.5em;
 }
-div a.numberone:visited{
-	color:#f3e5d8;
-}
-div a.numberone:link{
-	color:#f3e5d8;
-}
-div a.numberx:visited{
-	color:#4d3319;
-}
-div a.numberx:link{
-	color:#4d3319;
-}
-#number1{
-	background-color:#4d3319;
-	color:#f3e5d8;
-}
-#number4{
-	margin-top:2.8em;
-}
-#number5{
-	margin-top:4.6em;
-}
-#number6{
-	margin-top:4.6em;
+.arrows{
+	display:none;
 }
 </style>
 </head>
 <body>
-	<p class=title id="eng">Red Bean Milk Pudding</p>
-	<p class=subtitle id="ins">Sweet Red Beans:<p class=subtitle id="back"><a href="ingredients.html">◄◄ Back</a></p></p>
-	<p class=subtitle id="next"><a href="instruction2.html">Continue ►►</a></p>
-	<p class=subtitle id="steps">Steps</p>
-		<div class=grouped id="step1">
-			<div class=xx id="number1" ><a class=numberone href="instruction.html">1</a>
-				<p class=steps id="stepone">Rinse red beans.</p>
-			</div>
-		</div>
-		<div class=grouped id="step2">
-			<div class=xx id="number2"><a class=numberx href="instruction1-2.html">2</a>
-				<p class=steps id="steptwo">Put red beans and water into pot.</p>
-			</div>	
-		</div>
-		<div class=grouped id="step3">
-			<div class=xx id="number3"><a class=numberx href="instruction1-3.html">3</a>
-				<p class=steps id="stepthree">Boil without lid for 1 minute. Turn off heat, put on lid, and let it rest for 15 minutes.</p>
-			</div>
-		</div>
-		<div class=grouped>
-			<div class=xx id="number4"><a class=numberx href="instruction1-4.html">4</a>
-				<p class=steps id="stepfour">Repeat step 3 for 7 times. This makes sure that the outer shell of the red beans remain in shape.</p>
-			</div>
-			
-		</div>
-		<div class=grouped>
-			<div class=xx id="number5"><a class=numberx href="instruction1-5.html">5</a>
-				<p class=steps id="stepfive">Turn on heat again and add sugar. Turn off heat when it boils. Drain the remaining liquid.</p>
-			</div>
-		</div>
-		<div class=grouped>
-			<div class=xx id="number6"><a class=numberx href="instruction1-6.html">6</a>
-				<p class=steps id="stepsix">Put beans into a container and let it rest over night.</p>
-			</div>
-		</div>
+	<div class=title id="eng">Red Bean Milk Pudding
+		<div class=subtitle id="back"><a class=page href="ingredients.html">< Back</a></div>
+		<div class=subtitle id="next"><a class=page href="instruction2.html">Continue ></a></div>
+		<div class=title id="ins">Sweet Red Beans:</div>
+		<div class=subtitle id="steps">Steps</div>
+		<div class=xx id="number1" ><a class=stepnumber id="numberone" href="instruction.html">1
+			<div class=arrows> ► </div>
+			<div class=steps id="stepone">Rinse red beans.</div>
+		</a></div>
 
+		<div class=xx id="number2"><a class=stepnumber href="instruction1-2.html">2
+			<div class=arrows> ► </div>
+			<div class=steps id="steptwo">Put red beans and water into pot.</div>
+		</a></div>
 
+		<div class=xx id="number3"><a class=stepnumber href="instruction1-3.html">3
+			<div class=arrows> ► </div>
+			<div class=steps id="stepthree">Boil without lid for 1 minute. Turn off heat, put on lid, and let it rest for 15 minutes.</div>
+		</a></div>
+
+		<div class=xx id="number4"><a class=stepnumber href="instruction1-4.html">4
+			<div class=arrows> ► </div>
+			<div class=steps id="stepfour">Repeat step 3 for 7 times. This makes sure that the outer shell of the red beans remain in shape.</div>
+		</a></div>
+
+		<div class=xx id="number5"><a class=stepnumber href="instruction1-5.html">5
+			<div class=arrows> ► </div>			
+			<div class=steps id="stepfive">Turn on heat again and add sugar. Turn off heat when it boils. Drain the remaining liquid.</div>
+		</a></div>
+
+		<div class=xx id="number6"><a class=stepnumber href="instruction1-6.html">6
+			<div class=arrows> ► </div>
+			<div class=steps id="stepsix">Put beans into a container and let it rest over night.</div>
+		</a></div>
+	</div>
 </body>
 </html>
