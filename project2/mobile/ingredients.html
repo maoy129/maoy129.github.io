@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipe</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Work+Sans:900');
+body{
+	background-color:#f3e5d8;
+	font-size:18pt;
+}
+div{
+  margin:0;
+}
+.title{
+	color:black;
+	font-family: 'Work Sans', sans-serif;
+  font-weight:900;
+	position:absolute;
+}
+#eng{
+  font-size:5vmax;
+  top:20vh;
+  left:20vw;
+  color:#4d3319;
+}
+.subtitle{
+  color:#4d3319;
+  font-size:2vmax;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  position:relative;
+}
+#back{
+	top:-21em;
+  left:-2em;
+}
+#next{
+  top:-21em;
+  left:20em;
+}
+#ing{
+  font-size:3vmax;
+  position:relative;
+  transform:rotate(90deg);
+  top:11em;
+  left:-9em;
+  color:#4d3319;
+}
+a{
+	text-decoration:none;
+	color:#cc9966;
+	position:absolute;
+	top:15em;
+	left:2em;
+}
+a:hover{
+	color:#4d3319;
+}
+.list1{
+	font-size:0.4vmax;
+	font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+	position:relative;
+	color:#4d3319;
+	list-style-type:none;
+  top:9em;
+  left:27em;
+}
+.list2{
+  font-size:0.4vmax;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400;
+  position:absolute;
+  color:#4d3319;
+  list-style-type:none;
+  top:44.5em;
+  left:102em;
+  width:30vmax;
+}
+#listtitle1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:2vmax;
+  position:relative;
+  top:1.5em;
+  left:5.5em;
+}
+#listtitle2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:2vmax;
+  position:relative;
+  top:0.2em;
+  left:20.3em;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.7vmax;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.2vw;
+  width: 2.2vw;
+  background-color: #dfbf9f;
+}
+.container:hover input ~ .checkmark {
+  background-color: #cc9966;
+}
+.container input:checked ~ .checkmark {
+  background-color: #4d3319;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 0.8vmax;
+  top: 0.35vmax;
+  width: 0.6vmax;
+  height: 1vmax;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.line{
+  background-color:#cc9966;
+  width:0.1em;
+  height:3.2em;
+  position:absolute;
+  left:6.8em;
+  top:2.5em;
+  display:flex;
+}
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-height: 812px) {
+  a{
+    color:#4d3319;
+  }
+  #next{
+  left:14.3em;
+  }
+  #eng{
+  font-size:4vmax;
+  width:100vw;
+  }
+  #ing{
+  font-size:3vmax;
+  top:9em;
+  left:-7.3em;
+  }
+  .text{
+  font-size:1.5vmax;
+  width:80vw;
+  }
+  #listtitle1{
+  top:1.5em;
+  left:3em;
+  }
+  #listtitle2{
+  top:0.2em;
+  left:15.5em;
+  }
+  .list1{
+  top:1.5em;
+  left:3em;
+  font-size:2vmax;
+  }
+  .list2{
+  top:8em;
+  left:15.5em;
+  font-size:2vmax;
+  }
+  .container {
+    font-size: 2vmax;
+  }
+  .checkmark {
+  height: 3vw;
+  width: 3vw;
+  }
+  .container .checkmark:after {
+  left: 0.8vmax;
+  top: 0.35vmax;
+  width: 0.2vmax;
+  height: 0.6vmax;
+  }
+</style>
+</head>
+<body>
+	<div class=title id="eng">Red Bean Milk Pudding
+    <div class=subtitle id="back"><a href="index.html">< Back</a></div>
+    <div class=subtitle id="next"><a href="instruction.html">Instruction ></a></div>
+    <div class=title id="ing">Ingredients:</div>
+    <div id="listtitle1">Sweet Red Beans</div>
+    <div id="listtitle2">Milk Pudding</div>
+    <div class=list1>
+        <div><label class="container">150ml water<input type="checkbox"><span class="checkmark"></span></label></div>
+        <div><label class="container">50g red bean<input type="checkbox"><span class="checkmark"></span></label></div>
+        <div><label class="container">50g sugar<input type="checkbox"><span class="checkmark"></span></label></div>
+    </div>
+    <div class=list2>
+        <div><label class="container">250ml milk<input type="checkbox"><span class="checkmark"></span></label></div>
+        <div><label class="container">1 egg white<input type="checkbox"><span class="checkmark"></span></label></div>
+        <div><label class="container">15g sugar<input type="checkbox"><span class="checkmark"></span></label></div>
+    </div>
+    <div class=line></div>
+  </div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("checkone")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+	var x = document.getElementById("checktwo")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction3() {
+	 var x = document.getElementById("checkthree")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction4() {
+	var x = document.getElementById("checkfour")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction5() {
+  var x = document.getElementById("checkfive")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction6() {
+  var x = document.getElementById("checksix")
+   if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
