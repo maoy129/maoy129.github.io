@@ -152,58 +152,70 @@ a:hover{
   display:flex;
 }
 @media only screen 
-and (min-device-width: 375px) 
+and (min-device-width: 320px) 
 and (max-device-height: 812px) {
   a{
     color:#4d3319;
   }
+  #back{
+  top:-24em;
+  left:-2em;
+  font-size:3vmax;
+  }
   #next{
-  left:14.3em;
+  top:-24em;
+  left:9.2em;
+  font-size:3vmax;
   }
   #eng{
-  font-size:4vmax;
+  font-size:7vmax;
   width:100vw;
   }
   #ing{
-  font-size:3vmax;
-  top:9em;
-  left:-7.3em;
-  }
-  .text{
-  font-size:1.5vmax;
-  width:80vw;
+  font-size:5vmax;
+  top:1.2em;
+  left:0.1em;
+  transform:none;
   }
   #listtitle1{
-  top:1.5em;
-  left:3em;
+  font-size:3vmax;
+  top:3em;
+  left:0.1em;
   }
   #listtitle2{
-  top:0.2em;
-  left:15.5em;
+  font-size:3vmax;
+  top:10em;
+  left:0.1em;
   }
   .list1{
-  top:1.5em;
-  left:3em;
-  font-size:2vmax;
+  top:17em;
+  left:1.5em;
   }
   .list2{
-  top:8em;
-  left:15.5em;
-  font-size:2vmax;
+  top:153em;
+  left:1.5em;
   }
   .container {
-    font-size: 2vmax;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 3vmax;
   }
   .checkmark {
-  height: 3vw;
-  width: 3vw;
+  height: 80px;
+  width: 80px;
   }
   .container .checkmark:after {
-  left: 0.8vmax;
-  top: 0.35vmax;
-  width: 0.2vmax;
-  height: 0.6vmax;
+   left: 27px;
+  top: 15px;
+  width: 15px;
+  height: 30px;
   }
+  .line{
+    display:none;
+  }
+}
 </style>
 </head>
 <body>
