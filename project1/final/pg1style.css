@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Gentium+Basic');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic:700i');
 
 .sidenav {
   height: 100%;
@@ -59,7 +59,6 @@ body{
 h1{
 	color:#ece2d3;
 	font-family:'Gentium Basic', serif;
-	font-style:italic;
 	font-size:30pt;
 	width:70%;
 	margin-top:50px;
