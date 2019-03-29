@@ -1,1 +1,9 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.69 138.85"><defs><style>.cls-1{fill:#fff;stroke-linejoin:round;}.cls-1,.cls-2{stroke:#231f20;stroke-width:5px;}.cls-1,.cls-3,.cls-4{stroke-linecap:round;}.cls-2{fill:#231f20;}.cls-2,.cls-3,.cls-4{stroke-miterlimit:10;}.cls-3,.cls-4{fill:none;stroke:#fff;}.cls-3{stroke-width:2px;}.cls-4{stroke-width:3px;}</style></defs><title>onigiri2</title><path class="cls-1" d="M229,301.81l-48.16,75.4c-12,18.74,1.49,43.3,23.72,43.3h96.31a28.15,28.15,0,0,0,23.72-43.3L289.79,322.8c-24.93,26.44-61-7.52-36-34C260.27,282,234.7,292.8,229,301.81Z" transform="translate(-173.82 -284.16)"/><rect class="cls-2" x="43.85" y="61.72" width="72.12" height="72.12"/><polyline class="cls-3" points="65.36 115.66 70.18 119.43 75 115.66"/><line class="cls-4" x1="46.29" y1="92.1" x2="65.35" y2="92.1"/><line class="cls-4" x1="95.17" y1="92.1" x2="114.23" y2="92.1"/><polyline class="cls-3" points="75 115.66 79.82 119.43 84.64 115.66"/><polyline class="cls-3" points="84.82 115.66 89.64 119.43 94.46 115.66"/></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.69 138.85"><defs><style>.cls-1{fill:#fff;stroke-linejoin:round;}.cls-1,.cls-2{stroke:#231f20;stroke-width:5px;}.cls-1,.cls-3,.cls-4{stroke-linecap:round;}.cls-2{fill:#231f20;}.cls-2,.cls-3,.cls-4{stroke-miterlimit:10;}.cls-3,.cls-4{fill:none;stroke:#fff;}.cls-3{stroke-width:2px;}.cls-4{stroke-width:3px;}</style></defs><title>onigiri2</title>
+<path class="cls-1" d="M229,301.81l-48.16,75.4c-12,18.74,1.49,43.3,23.72,43.3h96.31a28.15,28.15,0,0,0,23.72-43.3L289.79,322.8c-24.93,26.44-61-7.52-36-34C260.27,282,234.7,292.8,229,301.81Z" >
+<rect class="cls-2" x="43.85" y="61.72" width="72.12" height="72.12"/>
+<polyline class="cls-3" points="65.36 115.66 70.18 119.43 75 115.66"/>
+<line class="cls-4" x1="46.29" y1="92.1" x2="65.35" y2="92.1"/>
+<line class="cls-4" x1="95.17" y1="92.1" x2="114.23" y2="92.1"/>
+<polyline class="cls-3" points="75 115.66 79.82 119.43 84.64 115.66"/>
+<polyline class="cls-3" points="84.82 115.66 89.64 119.43 94.46 115.66"/>
+</svg>
