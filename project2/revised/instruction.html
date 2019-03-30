@@ -91,6 +91,25 @@ a.stepnumber:hover .arrows{
 .arrows{
 	display:none;
 }
+.container{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	width:30vmax;
+	height:1vmax;
+	position:relative;
+	top:1.6em;
+	left:3.6em;
+}
+.square{
+	background-color:#cc9966;
+	width:1vmax;
+	height:1vmax;
+	display:inline;
+}
+#now{
+	background-color:#4d3319;
+}
 @media only screen 
 and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -183,37 +202,23 @@ and (min-height:450px)
 	<div class=title id="eng">Red Bean Milk Pudding
 		<div class=subtitle id="back"><a class=page href="ingredients.html">< Back</a></div>
 		<div class=subtitle id="next"><a class=page href="instruction2.html">Continue ></a></div>
+		<div class=container>
+			<div class=square id=now></div>
+			<div class=square></div>
+			<div class=square></div>
+			<div class=square></div>
+			<div class=square></div>
+			<div class=square></div>
+			<div class=square></div>
+			<div class=square></div>
+			<div class=square></div>
+			<div class=square></div>
+			<div class=square></div>
+		</div>
 		<div class=title id="ins">Instructions:</div>
 		<div class=subtitle id="steps">Step</div>
 		<div class=xx id="number1" ><a class=stepnumber id="numberone">1
-			<div class=arrows> ► </div>
-			<div class=steps id="stepone">Rinse red beans.</div>
+			<div class=steps id="stepone">Rinse red beans. Boil them in a pot without lid for 1 minute. </div>
 		</a></div>
-
-		<div class=xx id="number2"><a class=stepnumber>2
-			<div class=arrows> ► </div>
-			<div class=steps id="steptwo">Put red beans and water into pot.</div>
-		</a></div>
-
-		<div class=xx id="number3"><a class=stepnumber>3
-			<div class=arrows> ► </div>
-			<div class=steps id="stepthree">Boil without lid for 1 minute. Turn off heat, put on lid, and let it rest for 15 minutes.</div>
-		</a></div>
-
-		<div class=xx id="number4"><a class=stepnumber>4
-			<div class=arrows> ► </div>
-			<div class=steps id="stepfour">Repeat step 3 for 7 times. This makes sure that the outer shell of the red beans remain in shape.</div>
-		</a></div>
-
-		<div class=xx id="number5"><a class=stepnumber>5
-			<div class=arrows> ► </div>			
-			<div class=steps id="stepfive">Turn on heat again and add sugar. Turn off heat when it boils. Drain the remaining liquid.</div>
-		</a></div>
-
-		<div class=xx id="number6"><a class=stepnumber>6
-			<div class=arrows> ► </div>
-			<div class=steps id="stepsix">Put beans into a container and let it rest over night.</div>
-		</a></div>
-	</div>
 </body>
 </html>

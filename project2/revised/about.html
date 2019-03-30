@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipe</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Work+Sans:900');
+body{
+	background-color:#f3e5d8;
+	font-size:18pt;
+}
+.title{
+	color:#4d3319;
+	font-family: 'Work Sans', sans-serif;
+	font-weight:900;
+	position:absolute;
+}
+#eng{
+	font-size:5vmax;
+	top:20vh;
+	left:20vw;
+	color:#4d3319;
+}
+#chn{
+	font-size:3vmax;
+	position:relative;
+	transform:rotate(90deg);
+	top:10em;
+	left:-9em;
+	color:#4d3319;
+}
+.text{
+	font-size:1.7vmax;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+	width:50vmax;
+	position:relative;
+	left:5em;
+	top:-1em;
+	color:#4d3319;
+	line-height:2em;
+}
+a{
+	text-decoration:none;
+	color:#cc9966;
+}
+a:hover{
+	color:#4d3319;
+}
+.subtitle{
+	color:#4d3319;
+	font-size:2vmax;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	position:relative;
+}
+#back{
+	top:-21em;
+  left:-2em;
+}
+#ing{
+	top:-7.2em;
+	left:21.7em;
+}
+@media only screen
+and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+ {
+	a{
+		color:#4d3319;
+	}
+	#ing{
+	top:-9em;
+	left:11em;
+	font-size:3vmax;
+	}
+	#eng{
+	font-size:7vmax;
+	width:100vw;
+	}
+	#chn{
+	display:none;
+	}
+	.text{
+	font-size:4vmax;
+	width:100vw;
+	left:1vw;
+	top:2vh;
+	}
+}
+@media 
+(max-width: 545px)
+and (min-height:450px)
+ {
+	#ing{
+	top:-10.25em;
+	left:10.9em;
+	}
+	#eng{
+	display:block;
+	width:60vw;
+	}
+	#chn{
+	display:none;
+	}
+	.text{
+	display:flex;
+	width:60vw;
+	left:1vw;
+	top:4vh;
+	flex-direction:column;
+	}
+}
+</style>
+</head>
+<body>
+	<div class=title id="eng">Red Bean Milk Pudding
+		<div class=subtitle id="back"><a href="index.html">< Back</a></div>
+		<div class=subtitle id="ing"><a href="ingredients.html">Ingredients ></a></div>
+		<div class=title id="chn">红 豆 双 皮 奶</div>
+		<div class=text>The red bean milk pudding, or known as 红豆双皮奶 in Chinese, was one of my favorite desserts to eat as a child. During my elementary school years, my grandparents used to take me to a local dessert spot and buy me a red bean milk pudding almost every Friday afterschool. What makes it special is that it has a layer of film formed by the milk on top. This is a simple recipe that is also very delicious. </div>
+	</div>
+</body>
+</html>
