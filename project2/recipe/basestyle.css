@@ -108,7 +108,25 @@ a:hover{
  }
  @media only screen
  {
+ 	#container2{
+ 		width:70vw;
+ 	}
+ 	.subtitle{
+	font-size:1.5em;
+	}
  	.body{
 	font-size:2em;
+	}
+	.next{
+	position:fixed;
+	right:100px;
+	top:20vh;
+	font-size:4em;
+	}
+	.back{
+	position:fixed;
+	left:100px;
+	top:20vh;
+	font-size:4em;
 	}
  }
