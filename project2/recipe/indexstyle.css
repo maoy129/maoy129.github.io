@@ -4,3 +4,10 @@
 	width:50vw;
 	margin-top:70px;
 }
+@media only screen
+  and (max-width: 400px)
+ {
+ 	.body{
+	width:70vw;
+	}
+}
