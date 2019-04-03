@@ -108,7 +108,7 @@ a:hover{
  }
  @media only screen
  {
- 	html{
-	font-size:20pt;
+ 	.body{
+	font-size:2em;
 	}
  }
