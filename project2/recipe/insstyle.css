@@ -1,0 +1,36 @@
+.body{
+	margin-top:70px;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	text-align:center;
+	width:50vw;
+	height:15vh;
+}
+.listtitle{
+	font-weight:700;
+	margin-top:10px;
+	margin-bottom:7px;
+}
+.progress{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	width:40vmax;
+	height:1vmax;
+	margin-top:100px;
+}
+.square{
+	background-color:#D9B187;
+	width:2vmax;
+	height:2vmax;
+	border-radius:1vmax;
+	display:inline;
+}
+#current{
+	background-color:#814746;
+}
+#face{
+	margin-top:10px;
+	font-size:2em;
+}
