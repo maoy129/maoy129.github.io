@@ -23,7 +23,8 @@
 	width:70vw;
 	}
  }
-@media only screen and (max-width: 414px)
+@media only screen 
+and (max-width: 414px)
  {
  	#container3{
 	display:flex;
