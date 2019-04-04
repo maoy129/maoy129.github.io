@@ -16,13 +16,3 @@
 	margin-top:10px;
 	margin-bottom:7px;
 }
-
-@media only screen
- {
- 	#container3{
-	display:flex;
-	justify-content:center;
-	align-items:flex-start;
-	flex-direction:column;
-	}
-}
