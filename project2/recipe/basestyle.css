@@ -106,4 +106,27 @@ a:hover{
 	width:70vw;
 	}
  }
- 
+ @media only screen
+ and (max-width: 375px){
+ 	#container2{
+ 		width:70vw;
+ 	}
+ 	.subtitle{
+	font-size:3em;
+	}
+ 	.body{
+	font-size:3em;
+	}
+	.next{
+	position:fixed;
+	right:100px;
+	top:30vh;
+	font-size:5em;
+	}
+	.back{
+	position:fixed;
+	left:100px;
+	top:30vh;
+	font-size:5em;
+	}
+ }
