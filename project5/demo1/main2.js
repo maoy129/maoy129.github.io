@@ -43,6 +43,8 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metri
         }
     });
 
+    var temp = data.main.temp;
+    console.log(temp);
     });
 
 });
