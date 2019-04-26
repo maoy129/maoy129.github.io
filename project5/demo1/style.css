@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+body{
+	margin:0;
+}
+.block{
+	display:flex;
+	flex-direction:column;
+	font-family: 'Montserrat', sans-serif;
+	margin:20px;
+	align-items:center;
+}
+.cityName{
+	font-size:20pt;
+}
+.division{
+	width:50vw;
+	height:100vh;
+}
+#leftHalf{
+	background:white;
+}
+#rightHalf{
+	position:fixed;
+	background:black;
+	right:0;
+	top:0;
+}
+img{
+	width:20vmax;
+	margin-top:10px;
+	margin-bottom:10px;
+}
