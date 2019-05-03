@@ -19,12 +19,12 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metri
         } else if (humidity <= 100){
             $("#nyShape").attr("data","5.svg");
         }
-        $("#nyBlock").append("Humidity: "+ humidity + "%" + "</br>");
+        //$("#nyBlock").append("Humidity: "+ humidity + "%" + "</br>");
 
 
     var winddeg = data.wind.deg;
     console.log(winddeg);
-    $("#nyBlock").append("Wind Degree: "+ winddeg + "</br>");
+    //$("#nyBlock").append("Wind Degree: "+ winddeg + "</br>");
 
 
         if (winddeg <= 180){
@@ -41,7 +41,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metri
 
     var windspeed = data.wind.speed;
     console.log(windspeed);
-    $("#nyBlock").append("Wind Speed: "+ windspeed);
+    //$("#nyBlock").append("Wind Speed: "+ windspeed);
 
     if (windspeed <= 0.5){
             $("#nyShape").css("animation-duration", "102.4s");
@@ -111,12 +111,12 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1816670&units=metri
             $("#bjShape").attr("data","5.svg");
         }
 
-    $("#bjBlock").append("Humidity: "+ humidity + "%" + "</br>");
+    //$("#bjBlock").append("Humidity: "+ humidity + "%" + "</br>");
 
 
     var winddeg = data.wind.deg;
     console.log(winddeg);
-    $("#bjBlock").append("Wind Degree: "+ winddeg + "</br>");
+    //$("#bjBlock").append("Wind Degree: "+ winddeg + "</br>");
 
         if (winddeg <= 180){
             $("#bjShape").css("animation-name", "rotation");
@@ -134,7 +134,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1816670&units=metri
 
     var windspeed = data.wind.speed;
     console.log(windspeed);
-    $("#bjBlock").append("Wind Speed: "+ windspeed);
+    //$("#bjBlock").append("Wind Speed: "+ windspeed);
 
     if (windspeed <= 0.5){
             $("#bjShape").css("animation-duration", "102.4s");
@@ -207,11 +207,11 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1796236&units=metri
             $("#shShape").attr("data","5.svg");
         }
 
-    $("#shBlock").append("Humidity: "+ humidity + "%" + "</br>");
+    //$("#shBlock").append("Humidity: "+ humidity + "%" + "</br>");
 
     var winddeg = data.wind.deg;
     console.log(winddeg);
-    $("#shBlock").append("Wind Degree: "+ winddeg + "</br>");
+    //$("#shBlock").append("Wind Degree: "+ winddeg + "</br>");
 
         if (winddeg <= 180){
             $("#shShape").css("animation-name", "rotation");
@@ -229,7 +229,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1796236&units=metri
 
     var windspeed = data.wind.speed;
     console.log(windspeed);
-    $("#shBlock").append("Wind Speed: "+ windspeed);
+    //$("#shBlock").append("Wind Speed: "+ windspeed);
 
     if (windspeed <= 0.5){
             $("#shShape").css("animation-duration", "102.4s");
@@ -299,11 +299,11 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1850147&units=metri
             $("#tkShape").attr("data","5.svg");
         }
 
-    $("#tkBlock").append("Humidity: "+ humidity + "%" + "</br>");
+    //$("#tkBlock").append("Humidity: "+ humidity + "%" + "</br>");
 
     var winddeg = data.wind.deg;
     console.log(winddeg);
-    $("#tkBlock").append("Wind Degree: "+ winddeg + "</br>");
+    //$("#tkBlock").append("Wind Degree: "+ winddeg + "</br>");
 
         if (winddeg <= 180){
             $("#tkShape").css("animation-name", "rotation");
@@ -321,7 +321,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1850147&units=metri
 
     var windspeed = data.wind.speed;
     console.log(windspeed);
-    $("#tkBlock").append("Wind Speed: "+ windspeed);
+    //$("#tkBlock").append("Wind Speed: "+ windspeed);
 
     if (windspeed <= 0.5){
             $("#tkShape").css("animation-duration", "102.4s");
@@ -390,11 +390,11 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1733046&units=metri
             $("#klShape").attr("data","5.svg");
         }
 
-    $("#klBlock").append("Humidity: "+ humidity + "%" + "</br>");
+    //$("#klBlock").append("Humidity: "+ humidity + "%" + "</br>");
 
     var winddeg = data.wind.deg;
     console.log(winddeg);
-    $("#klBlock").append("Wind Degree: "+ winddeg + "</br>");
+    //$("#klBlock").append("Wind Degree: "+ winddeg + "</br>");
 
         if (winddeg <= 180){
             $("#klShape").css("animation-name", "rotation");
@@ -412,7 +412,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1733046&units=metri
 
     var windspeed = data.wind.speed;
     console.log(windspeed);
-    $("#klBlock").append("Wind Speed: "+ windspeed);
+    //$("#klBlock").append("Wind Speed: "+ windspeed);
 
     if (windspeed <= 0.5){
             $("#klShape").css("animation-duration", "102.4s");
@@ -482,11 +482,11 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metri
             $("#ldShape").attr("data","5.svg");
         }
 
-    $("#ldBlock").append("Humidity: "+ humidity + "%" + "</br>");
+    //$("#ldBlock").append("Humidity: "+ humidity + "%" + "</br>");
 
     var winddeg = data.wind.deg;
     console.log(winddeg);
-    $("#ldBlock").append("Wind Degree: "+ winddeg + "</br>");
+    //$("#ldBlock").append("Wind Degree: "+ winddeg + "</br>");
 
         if (winddeg <= 180){
             $("#ldShape").css("animation-name", "rotation");
@@ -504,7 +504,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metri
 
     var windspeed = data.wind.speed;
     console.log(windspeed);
-    $("#ldBlock").append("Wind Speed: "+ windspeed);
+    //$("#ldBlock").append("Wind Speed: "+ windspeed);
 
     if (windspeed <= 0.5){
             $("#ldShape").css("animation-duration", "102.4s");
@@ -574,11 +574,11 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2147714&units=metri
             $("#snShape").attr("data","5.svg");
         }
 
-    $("#snBlock").append("Humidity: "+ humidity + "%" + "</br>");
+    //$("#snBlock").append("Humidity: "+ humidity + "%" + "</br>");
 
     var winddeg = data.wind.deg;
     console.log(winddeg);
-    $("#snBlock").append("Wind Degree: "+ winddeg + "</br>");
+    //$("#snBlock").append("Wind Degree: "+ winddeg + "</br>");
 
         if (winddeg <= 180){
             $("#snShape").css("animation-name", "rotation");
@@ -596,7 +596,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2147714&units=metri
 
     var windspeed = data.wind.speed;
     console.log(windspeed);
-    $("#snBlock").append("Wind Speed: "+ windspeed);
+    //$("#snBlock").append("Wind Speed: "+ windspeed);
 
     if (windspeed <= 0.5){
             $("#snShape").css("animation-duration", "102.4s");
@@ -665,11 +665,11 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2988507&units=metri
             $("#prShape").attr("data","5.svg");
         }
 
-    $("#prBlock").append("Humidity: "+ humidity + "%" + "</br>");
+    //$("#prBlock").append("Humidity: "+ humidity + "%" + "</br>");
 
     var winddeg = data.wind.deg;
     console.log(winddeg);
-    $("#prBlock").append("Wind Degree: "+ winddeg + "</br>");
+    //$("#prBlock").append("Wind Degree: "+ winddeg + "</br>");
 
         if (winddeg <= 180){
             $("#prShape").css("animation-name", "rotation");
@@ -687,7 +687,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2988507&units=metri
 
     var windspeed = data.wind.speed;
     console.log(windspeed);
-    $("#prBlock").append("Wind Speed: "+ windspeed);
+    //$("#prBlock").append("Wind Speed: "+ windspeed);
 
     if (windspeed <= 0.5){
             $("#prShape").css("animation-duration", "102.4s");
