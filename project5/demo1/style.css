@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|700');
 @keyframes rotation {
 	0% {
 		transform: rotate(0deg);
@@ -14,12 +14,29 @@
 body{
 	margin:0;
 }
+.title{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	font-size:32pt;
+	position:fixed;
+	top:10vh;
+	left:30vw;
+}
+.contain{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	position:absolute;
+	top:25vh;
+}
 .block{
 	display:flex;
 	flex-direction:column;
 	font-family: 'Montserrat', sans-serif;
 	margin:20px;
 	align-items:center;
+	text-align:center;
+
 }
 .cityName{
 	font-size:20pt;
@@ -37,8 +54,8 @@ body{
 	right:0;
 	top:0;
 }
-img{
-	width:20vmax;
+object{
 	margin-top:10px;
 	margin-bottom:10px;
+	fill:blue;
 }
