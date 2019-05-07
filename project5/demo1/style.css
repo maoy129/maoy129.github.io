@@ -24,38 +24,40 @@ body{
 }
 .contain{
 	display:flex;
-	flex-direction:row;
-	align-items:center;
+	flex-direction:column;
 	position:absolute;
-	top:25vh;
+	width:100vw;
 }
 .block{
-	display:flex;
+	display:block-flex;
 	flex-direction:column;
 	font-family: 'Montserrat', sans-serif;
-	margin:20px;
+	margin-top:20px;
+	margin-bottom:20px;
 	align-items:center;
 	text-align:center;
-
 }
 .cityName{
 	font-size:20pt;
+	display:none;
 }
 .division{
 	width:50vw;
 	height:100vh;
 }
-#leftHalf{
-	background:white;
-}
-#rightHalf{
-	position:fixed;
-	background:black;
-	right:0;
-	top:0;
-}
 object{
 	margin-top:10px;
 	margin-bottom:10px;
 	fill:blue;
+}
+.revert{
+	background-color:white;
+	mix-blend-mode:difference;
+	width:50vw;
+	height:150vh;
+	position:fixed;
+	top:-25vh;
+	left:50vw;
+}
+#klShape{
 }

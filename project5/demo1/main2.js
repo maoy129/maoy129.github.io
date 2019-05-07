@@ -82,7 +82,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metri
         }else if (temp <= 40){
             $("#nyShape").css("width", "40vmax");   
         }else if (temp > 40){
-            $("#nyShape").css("width", "50vmax");
+            $("#nyShape").css("width", "45vmax");
         }
 
     });
@@ -175,7 +175,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1816670&units=metri
         }else if (temp <= 40){
             $("#bjShape").css("width", "40vmax");   
         }else if (temp > 40){
-            $("#bjShape").css("width", "50vmax");
+            $("#bjShape").css("width", "45vmax");
         }
 
 
@@ -270,7 +270,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1796236&units=metri
         }else if (temp <= 40){
             $("#shShape").css("width", "40vmax");   
         }else if (temp > 40){
-            $("#shShape").css("width", "50vmax");
+            $("#shShape").css("width", "45vmax");
         }
 
     });
@@ -362,7 +362,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1850147&units=metri
         }else if (temp <= 40){
             $("#tkShape").css("width", "40vmax");   
         }else if (temp > 40){
-            $("#tkShape").css("width", "50vmax");
+            $("#tkShape").css("width", "45vmax");
         }
     });
 
@@ -453,7 +453,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1733046&units=metri
         }else if (temp <= 40){
             $("#klShape").css("width", "40vmax");   
         }else if (temp > 40){
-            $("#klShape").css("width", "50vmax");
+            $("#klShape").css("width", "45vmax");
         }
 
     });
@@ -545,7 +545,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metri
         }else if (temp <= 40){
             $("#ldShape").css("width", "40vmax");   
         }else if (temp > 40){
-            $("#ldShape").css("width", "50vmax");
+            $("#ldShape").css("width", "45vmax");
         }
 
     });
@@ -637,7 +637,7 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2147714&units=metri
         }else if (temp <= 40){
             $("#snShape").css("width", "40vmax");   
         }else if (temp > 40){
-            $("#snShape").css("width", "50vmax");
+            $("#snShape").css("width", "45vmax");
         }
     });
 
@@ -728,8 +728,159 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2988507&units=metri
         }else if (temp <= 40){
             $("#prShape").css("width", "40vmax");   
         }else if (temp > 40){
-            $("#prShape").css("width", "50vmax");
+            $("#prShape").css("width", "45vmax");
         }
     });
 
 });
+
+$(function() {
+var a = new Date().getHours();
+console.log(a);
+
+if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#nyShape').css('margin-left','-65vw');
+            $('#bjShape').css('margin-left','-65vw');
+            $('#shShape').css('margin-left','-65vw');
+            $('#tkShape').css('margin-left','-65vw');
+            $('#klShape').css('margin-left','-65vw');
+            $('#ldShape').css('margin-left','-65vw');
+            $('#snShape').css('margin-left','-65vw');
+            $('#prShape').css('margin-left','-65vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+            $('#nyShape').css('margin-left','0');
+            $('#bjShape').css('margin-left','0');
+            $('#shShape').css('margin-left','0');
+            $('#tkShape').css('margin-left','0');
+            $('#klShape').css('margin-left','0');
+            $('#ldShape').css('margin-left','0');
+            $('#snShape').css('margin-left','0');
+            $('#prShape').css('margin-left','0');
+        }
+if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+            $('#nyShape').css('margin-left','65vw'); 
+            $('#bjShape').css('margin-left','65vw');
+            $('#shShape').css('margin-left','65vw');
+            $('#tkShape').css('margin-left','65vw');
+            $('#klShape').css('margin-left','65vw');
+            $('#ldShape').css('margin-left','65vw');
+            $('#snShape').css('margin-left','65vw');
+            $('#prShape').css('margin-left','65vw'); 
+        }
+});
+
+$(function() {
+var a = new Date().getHours();
+//console.log(a);
+
+if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#nyShape').css('margin-left','-65vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+            $('#nyShape').css('margin-left','0');
+        }
+if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+            $('#nyShape').css('margin-left','65vw'); 
+        }
+});
+
+$(function() {
+var b = new Date().toLocaleString("en-US", {timeZone: "Asia/Hong_Kong"});
+var a = new Date(b).getHours();
+//console.log(a);
+
+if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#bjShape').css('margin-left','-65vw');
+            $('#shShape').css('margin-left','-65vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+            $('#bjShape').css('margin-left','0');
+            $('#shShape').css('margin-left','0');
+        }
+if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+            $('#bjShape').css('margin-left','65vw');
+            $('#shShape').css('margin-left','65vw');
+        }
+});
+
+$(function() {
+var b = new Date().toLocaleString("en-US", {timeZone: "Asia/Tokyo"});
+var a = new Date(b).getHours();
+//console.log(a);
+
+if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#tkShape').css('margin-left','-65vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+            $('#tkShape').css('margin-left','0');
+        }
+if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+            $('#tkShape').css('margin-left','65vw');
+        }
+});
+
+$(function() {
+var b = new Date().toLocaleString("en-US", {timeZone: "Asia/Kuala_Lumpur"});
+var a = new Date(b).getHours();
+//console.log(a);
+
+if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#klShape').css('margin-left','-65vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+            $('#klShape').css('margin-left','0');
+        }
+if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+            $('#klShape').css('margin-left','65vw');
+        }
+});
+
+$(function() {
+var b = new Date().toLocaleString("en-US", {timeZone: "Europe/London"});
+var a = new Date(b).getHours();
+//console.log(a);
+
+if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#ldShape').css('margin-left','-65vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+            $('#ldShape').css('margin-left','0');
+        }
+if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+            $('#ldShape').css('margin-left','65vw');
+        }
+});
+
+$(function() {
+var b = new Date().toLocaleString("en-US", {timeZone: "Australia/Sydney"});
+var a = new Date(b).getHours();
+//console.log(a);
+
+if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#snShape').css('margin-left','-65vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+            $('#snShape').css('margin-left','0');
+        }
+if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+            $('#snShape').css('margin-left','65vw');
+        }
+});
+
+$(function() {
+var b = new Date().toLocaleString("en-US", {timeZone: "Europe/Paris"});
+var a = new Date(b).getHours();
+//console.log(a);
+
+if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#prShape').css('margin-left','-65vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+            $('#prShape').css('margin-left','0');
+        }
+if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+            $('#prShape').css('margin-left','65vw');
+        }
+});
+
