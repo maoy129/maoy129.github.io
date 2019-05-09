@@ -809,14 +809,20 @@ $(function() {
 var a = new Date().getHours();
 //console.log(a);
 
-if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+if ((a == 2) || (a == 3) || (a == 4)||(a == 5)){
             $('#nyShape').css('margin-left','-65vw');
         } 
-if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+if((a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#nyShape').css('margin-left','-32.5vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14)){
             $('#nyShape').css('margin-left','0');
         }
-if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
-            $('#nyShape').css('margin-left','65vw'); 
+if((a == 15) || (a == 16) || (a == 17) || (a == 18) || (a == 19) || (a == 20)){
+            $('#nyShape').css('margin-left','32.5vw');
+}
+if ((a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1)){
+            $('#nyShape').css('margin-left','65vw');
         }
 });
 
@@ -825,15 +831,23 @@ var b = new Date().toLocaleString("en-US", {timeZone: "Asia/Hong_Kong"});
 var a = new Date(b).getHours();
 //console.log(a);
 
-if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+if ((a == 2) || (a == 3) || (a == 4)||(a == 5)){
             $('#bjShape').css('margin-left','-65vw');
             $('#shShape').css('margin-left','-65vw');
         } 
-if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+if((a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#bjShape').css('margin-left','-32.5vw');
+            $('#shShape').css('margin-left','-32.5vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14)){
             $('#bjShape').css('margin-left','0');
             $('#shShape').css('margin-left','0');
         }
-if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+if((a == 15) || (a == 16) || (a == 17) || (a == 18) || (a == 19) || (a == 20)){
+            $('#bjShape').css('margin-left','32.5vw');
+            $('#shShape').css('margin-left','32.5vw');
+}
+if ((a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1)){
             $('#bjShape').css('margin-left','65vw');
             $('#shShape').css('margin-left','65vw');
         }
@@ -844,13 +858,19 @@ var b = new Date().toLocaleString("en-US", {timeZone: "Asia/Tokyo"});
 var a = new Date(b).getHours();
 //console.log(a);
 
-if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+if ((a == 2) || (a == 3) || (a == 4)||(a == 5)){
             $('#tkShape').css('margin-left','-65vw');
         } 
-if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+if((a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#tkShape').css('margin-left','-32.5vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14)){
             $('#tkShape').css('margin-left','0');
         }
-if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+if((a == 15) || (a == 16) || (a == 17) || (a == 18) || (a == 19) || (a == 20)){
+            $('#tkShape').css('margin-left','32.5vw');
+}
+if ((a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1)){
             $('#tkShape').css('margin-left','65vw');
         }
 });
@@ -860,13 +880,19 @@ var b = new Date().toLocaleString("en-US", {timeZone: "Asia/Kuala_Lumpur"});
 var a = new Date(b).getHours();
 //console.log(a);
 
-if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+if ((a == 2) || (a == 3) || (a == 4)||(a == 5)){
             $('#klShape').css('margin-left','-65vw');
         } 
-if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+if((a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#klShape').css('margin-left','-32.5vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14)){
             $('#klShape').css('margin-left','0');
         }
-if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+if((a == 15) || (a == 16) || (a == 17) || (a == 18) || (a == 19) || (a == 20)){
+            $('#klShape').css('margin-left','32.5vw');
+}
+if ((a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1)){
             $('#klShape').css('margin-left','65vw');
         }
 });
@@ -876,13 +902,19 @@ var b = new Date().toLocaleString("en-US", {timeZone: "Europe/London"});
 var a = new Date(b).getHours();
 //console.log(a);
 
-if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+if ((a == 2) || (a == 3) || (a == 4)||(a == 5)){
             $('#ldShape').css('margin-left','-65vw');
         } 
-if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+if((a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#ldShape').css('margin-left','-32.5vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14)){
             $('#ldShape').css('margin-left','0');
         }
-if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+if((a == 15) || (a == 16) || (a == 17) || (a == 18) || (a == 19) || (a == 20)){
+            $('#ldShape').css('margin-left','32.5vw');
+}
+if ((a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1)){
             $('#ldShape').css('margin-left','65vw');
         }
 });
@@ -892,13 +924,19 @@ var b = new Date().toLocaleString("en-US", {timeZone: "Australia/Sydney"});
 var a = new Date(b).getHours();
 //console.log(a);
 
-if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+if ((a == 2) || (a == 3) || (a == 4)||(a == 5)){
             $('#snShape').css('margin-left','-65vw');
         } 
-if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+if((a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#snShape').css('margin-left','-32.5vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14)){
             $('#snShape').css('margin-left','0');
         }
-if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+if((a == 15) || (a == 16) || (a == 17) || (a == 18) || (a == 19) || (a == 20)){
+            $('#snShape').css('margin-left','32.5vw');
+}
+if ((a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1)){
             $('#snShape').css('margin-left','65vw');
         }
 });
@@ -908,13 +946,19 @@ var b = new Date().toLocaleString("en-US", {timeZone: "Europe/Paris"});
 var a = new Date(b).getHours();
 //console.log(a);
 
-if ((a == 3) || (a == 4)||(a == 5) || (a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+if ((a == 2) || (a == 3) || (a == 4)||(a == 5)){
             $('#prShape').css('margin-left','-65vw');
         } 
-if ((a == 11) || (a == 12) || (a == 13) || (a == 14) || (a == 15) || (a == 16) || (a == 17) || (a == 18)){
+if((a == 6) || (a == 7) || (a == 8) || (a == 9) || (a == 10)){
+            $('#prShape').css('margin-left','-32.5vw');
+        } 
+if ((a == 11) || (a == 12) || (a == 13) || (a == 14)){
             $('#prShape').css('margin-left','0');
         }
-if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1) || (a == 2)){
+if((a == 15) || (a == 16) || (a == 17) || (a == 18) || (a == 19) || (a == 20)){
+            $('#prShape').css('margin-left','32.5vw');
+}
+if ((a == 21) || (a == 22) || (a == 23) || (a == 24) || (a == 1)){
             $('#prShape').css('margin-left','65vw');
         }
 });
