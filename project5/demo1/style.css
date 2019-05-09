@@ -72,6 +72,10 @@ body{
 object{
 	margin:60px;
 }
+.visual{
+	position:relative;
+	top:10px;
+}
 .revert{
 	background-color:white;
 	mix-blend-mode:exclusion;
@@ -105,7 +109,9 @@ object{
 	top:60px;
 }
 .data{
-	margin-top:20px;
+	font-size:14pt;
+	position:relative;
+	top:20px;
 	display:none;
 }
 .link{

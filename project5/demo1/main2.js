@@ -921,7 +921,8 @@ if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) |
 
 $(document).ready(function(){
   $("#link1").click(function(){
-    $("object").toggle();
+    $(".visual").css("opacity","0");
+    $(".visual").css("margin-top","-32px");
     $("#link1").toggle();
     $("#switch1").hide();
     $("#link2").toggle();
@@ -931,7 +932,8 @@ $(document).ready(function(){
     $("#see2").show();
   });
   $("#link2").click(function(){
-    $("object").toggle();
+    $(".visual").css("opacity","1");
+    $(".visual").css("margin-top","60px");
     $("#link1").toggle();
     $("#switch1").show();
     $("#link2").toggle();
@@ -940,12 +942,4 @@ $(document).ready(function(){
     $("#see2").hide();
     $("#see1").show();
   });
-});
-
-$("button").hover(function(){
-   $("#switch1").toggle();
-   $("#switch2").toggle();
-  }, function(){
-    $("#switch1").show();
-    $("#switch2").hide();
 });
