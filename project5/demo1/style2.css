@@ -11,18 +11,6 @@
 	}
 }
 
-@keyframes flash {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity:0.3;
-	}
-	100% {
-		opacity:1;
-	}
-}
-
 body{
 	margin:0;
 }
@@ -50,19 +38,8 @@ body{
 	align-items:center;
 	text-align:center;
 }
-.afterFirst{
-	margin-top:80px;
-}
 .cityName{
 	font-size:20pt;
-}
-.see{
-	font-family: 'Montserrat', sans-serif;
-	font-size:14pt;
-	position:absolute;
-	top:20px;
-}
-#see2{
 	display:none;
 }
 .division{
@@ -70,7 +47,9 @@ body{
 	height:100vh;
 }
 object{
-	margin:60px;
+	margin-top:10px;
+	margin-bottom:10px;
+	fill:blue;
 }
 .revert{
 	background-color:white;
@@ -90,23 +69,9 @@ object{
 	height:10vh;
 	top:10px;
 }
-.click{
+#click{
 	width:10vmax;
 	display:flex;
-	margin:0;
-	position:absolute;
-}
-#switch1{
-	display:flex;
-	top:40px;
-}
-#switch2{
-	display:none;
-	top:60px;
-}
-.data{
-	margin-top:20px;
-	display:none;
 }
 .link{
 	width:10vmax;
@@ -114,25 +79,12 @@ object{
 	display:flex;
 }
 .linkBox{
-	position:fixed;
+	position:absolute;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 	width:100vw;
 	height:10vh;
-	top:50px;
-	z-index:500;
-}
-
-#link1{
-	display:flex;
-}
-#link2{
-	display:none;
-}
-button{
-	background-color:transparent;
-	border:none;
-	outline:none;
-	cursor:pointer;
+	top:40px;
+	z-index:100;
 }

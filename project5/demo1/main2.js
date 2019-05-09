@@ -19,12 +19,10 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metri
         } else if (humidity <= 100){
             $("#nyShape").attr("data","5.svg");
         }
-        //$("#nyBlock").append("Humidity: "+ humidity + "%" + "</br>");
 
 
     var winddeg = data.wind.deg;
     console.log(winddeg);
-    //$("#nyBlock").append("Wind Degree: "+ winddeg + "</br>");
 
 
         if (winddeg <= 180){
@@ -84,6 +82,11 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metri
         }else if (temp > 40){
             $("#nyShape").css("width", "45vmax");
         }
+
+$("#nyData").append("Humidity: "+ humidity + "%" + "</br>");
+$("#nyData").append("Wind Degree: "+ winddeg + "</br>");
+$("#nyData").append("Wind Speed: "+ windspeed + "</br>");
+$("#nyData").append("Temperature: "+ temp + " C");
 
     });
 
@@ -178,6 +181,10 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1816670&units=metri
             $("#bjShape").css("width", "45vmax");
         }
 
+$("#bjData").append("Humidity: "+ humidity + "%" + "</br>");
+$("#bjData").append("Wind Degree: "+ winddeg + "</br>");
+$("#bjData").append("Wind Speed: "+ windspeed + "</br>");
+$("#bjData").append("Temperature: "+ temp + " C");
 
 
     });
@@ -273,6 +280,10 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1796236&units=metri
             $("#shShape").css("width", "45vmax");
         }
 
+        $("#shData").append("Humidity: "+ humidity + "%" + "</br>");
+        $("#shData").append("Wind Degree: "+ winddeg + "</br>");
+        $("#shData").append("Wind Speed: "+ windspeed + "</br>");
+        $("#shData").append("Temperature: "+ temp + " C");
     });
 
 });
@@ -364,6 +375,12 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1850147&units=metri
         }else if (temp > 40){
             $("#tkShape").css("width", "45vmax");
         }
+
+        $("#tkData").append("Humidity: "+ humidity + "%" + "</br>");
+        $("#tkData").append("Wind Degree: "+ winddeg + "</br>");
+        $("#tkData").append("Wind Speed: "+ windspeed + "</br>");
+        $("#tkData").append("Temperature: "+ temp + " C");
+
     });
 
 });
@@ -455,6 +472,11 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=1733046&units=metri
         }else if (temp > 40){
             $("#klShape").css("width", "45vmax");
         }
+
+        $("#klData").append("Humidity: "+ humidity + "%" + "</br>");
+        $("#klData").append("Wind Degree: "+ winddeg + "</br>");
+        $("#klData").append("Wind Speed: "+ windspeed + "</br>");
+        $("#klData").append("Temperature: "+ temp + " C");
 
     });
 
@@ -548,6 +570,11 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metri
             $("#ldShape").css("width", "45vmax");
         }
 
+        $("#ldData").append("Humidity: "+ humidity + "%" + "</br>");
+        $("#ldData").append("Wind Degree: "+ winddeg + "</br>");
+        $("#ldData").append("Wind Speed: "+ windspeed + "</br>");
+        $("#ldData").append("Temperature: "+ temp + " C");
+
     });
 
 });
@@ -639,6 +666,10 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2147714&units=metri
         }else if (temp > 40){
             $("#snShape").css("width", "45vmax");
         }
+        $("#snData").append("Humidity: "+ humidity + "%" + "</br>");
+        $("#snData").append("Wind Degree: "+ winddeg + "</br>");
+        $("#snData").append("Wind Speed: "+ windspeed + "</br>");
+        $("#snData").append("Temperature: "+ temp + " C");
     });
 
 });
@@ -730,6 +761,10 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?id=2988507&units=metri
         }else if (temp > 40){
             $("#prShape").css("width", "45vmax");
         }
+        $("#prData").append("Humidity: "+ humidity + "%" + "</br>");
+        $("#prData").append("Wind Degree: "+ winddeg + "</br>");
+        $("#prData").append("Wind Speed: "+ windspeed + "</br>");
+        $("#prData").append("Temperature: "+ temp + " C");
     });
 
 });
@@ -884,3 +919,33 @@ if ((a == 19) || (a == 20) || (a == 21) || (a == 22) || (a == 23) || (a == 24) |
         }
 });
 
+$(document).ready(function(){
+  $("#link1").click(function(){
+    $("object").toggle();
+    $("#link1").toggle();
+    $("#switch1").hide();
+    $("#link2").toggle();
+    $("#switch2").show();
+    $(".data").show();
+    $("#see1").hide();
+    $("#see2").show();
+  });
+  $("#link2").click(function(){
+    $("object").toggle();
+    $("#link1").toggle();
+    $("#switch1").show();
+    $("#link2").toggle();
+    $("#switch2").hide();
+    $(".data").hide();
+    $("#see2").hide();
+    $("#see1").show();
+  });
+});
+
+$("button").hover(function(){
+   $("#switch1").toggle();
+   $("#switch2").toggle();
+  }, function(){
+    $("#switch1").show();
+    $("#switch2").hide();
+});
